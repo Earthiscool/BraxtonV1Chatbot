@@ -30,6 +30,9 @@ if _sa:
     SERVICE_ACCOUNT_FILE = _tmp.name
 else:
     SERVICE_ACCOUNT_FILE = "service_account.json"
+print(f"DEBUG: SERVICE_ACCOUNT_FILE = {SERVICE_ACCOUNT_FILE}, exists = {os.path.exists(SERVICE_ACCOUNT_FILE)}, SA_JSON set = {bool(os.environ.get('SERVICE_ACCOUNT_JSON'))}")
+
+
 FOLDER_ID            = os.environ.get("DRIVE_FOLDER_ID", "")
 ADMIN_PASSWORD       = os.environ.get("ADMIN_PASSWORD", "")
 SCOPES               = ["https://www.googleapis.com/auth/drive.readonly"]
