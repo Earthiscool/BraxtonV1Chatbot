@@ -1,0 +1,64 @@
+﻿How to Place Vendor Orders
+
+
+To create projected orders based on mins in DARTS. Reference the GMROI SHOWS report before placing small vendor orders to ensure they are updated and accurate before ordering.
+
+
+GUI
+
+
+[Projected Order System]
+Projected Order Create
+Vendor(S) > Distributor Code
+        On Monday use all the major vendor codes. This allows the system to purchase from best priced and avoid ordering from higher priced vendors.
+        On tuesday use PH, CP, and PFX so that it chooses between those two
+        On Wednesday, just list CP and PFX
+Weeks > 1.5
+Cheapest? > Yes
+Price Shop? > Yes
+Add Layaways, Spec Orders, Deliv? > Yes
+Skip Min Qty > No
+Skip Min/Max > No
+Product Code > N/A
+MFR > N/A
+Project Order File
+
+
+Projected Sales Order Accept PROCESS???
+
+
+P/O Processing
+Pull Up Vendor P/O
+Review and +/- Needed Items
+Review Special Order Bins and Ensure Orders are on P/O
+Save and Receive Later
+Pull Up Same Vendor P/O Again
+
+
+[Projected Order System]
+        Projected Sales Order Accept
+        By Vendor,Items#
+                Create P/O
+                Enter if Correct Vendor is Shown, “S” for Incorrect Vendor
+                Shipping > UPS
+
+
+[Send P/O to Vendor]
+        Select Appropriate Vendor (For Direct Small Vendors Choose “Any Non-Listed Vendor”)
+        P/O #
+        Send P/O
+        “Yes”
+
+
+Confirm P/O Sent in Master Email Sent Folder
+
+
+Turn Ordering Off for Vendors
+Inventory Control
+Other File Maintenance
+Vendor Maintenance
+Input Vendor
+Check or Uncheck “Do not order from this Vendor” box (top right corner)
+
+
+Major Vendor Order Schedule

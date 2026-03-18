@@ -1,0 +1,12 @@
+streamlit
+chromadb
+llama-index
+llama-index-vector-stores-chroma
+llama-index-embeddings-huggingface
+llama-index-llms-groq
+google-auth
+google-auth-oauthlib
+google-api-python-client
+sentence-transformers
+groq
+gspread

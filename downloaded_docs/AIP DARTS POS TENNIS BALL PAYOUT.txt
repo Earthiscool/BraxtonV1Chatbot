@@ -1,0 +1,12 @@
+﻿The following instruction is to clearly identify the steps to “pay” a customer for Tennis Balls. Or any other “Paid Out” from the POS drawer.
+
+
+1. Bring up the customer's account with a pet pass number.
+2. Go straight to pay screen and type in a new Misc charge code of “PO”
+3. Use a calculator to factor how much to pay out.
+   1. We payout 25 cents per tennis ball. (ie. 25 tennis balls = 25 X $0.25 = $7.50)
+   2. Input the number into the PayOut amount. Do not make it a negative quantity, it will convert it to negative for you.
+4. Input into invoice Message “Tennis Ball PayOut (amount of tennis balls) qty”
+5. We only pay out for tennis balls in Cash
+6. Conclude transaction through cash and print receipt and store in the blue end of day bin under the register.
+7. Take newly received tennis balls to the warehouse associate to be properly in-processed and received into inventory.

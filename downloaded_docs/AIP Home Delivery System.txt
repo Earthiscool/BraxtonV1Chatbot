@@ -1,0 +1,32 @@
+﻿Darts Home Delivery System
+
+
+To Input a Subscription
+Enter customer’s pet pass into darts pos
+Click the add/alter subscriptions button
+Create new order sheet by entering the following information:
+Description: Delivery (Other examples: Pick-Up or Delivery-2 if they have different delivery rotations)
+Next Delivery Date
+Day of Week: TUE or THU
+Days between Deliveries: 28=4 Weeks 20=3 Weeks 13=2 Weeks 7=1 Week
+Pick Up?: Check if it is an in-store pick up
+Enter PLU’s of recurring items
+Enter Recurring Delivery Charge
+Save
+
+
+Process Deliveries
+From Darts POS/Invoice Processing
+[Home Delivery System]
+Batch Process Deliveries to Hold
+Start Date today’s date through Tuesday’s date for Tuesday Deliveries, or Wednesday through Thursday for Thursday Deliveries
+As of Now, Do not send email notice
+Process Orders
+
+
+From the POS screen
+Recall holds
+Call customers to confirm order and delivery
+Process delivery
+Print Pick Ticket if awaiting special order or a delivery for a product
+Give pick ticket to warehouse so they know what to pull

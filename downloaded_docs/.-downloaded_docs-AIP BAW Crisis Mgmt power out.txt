@@ -1,0 +1,78 @@
+﻿Location Crisis Protocol:
+Power Outage (prep, and during), Snow, Heavy rain/hurricane, extreme heat
+
+
+The power has gone out for many reasons in the past. The most common is weather like snow/ice or hurricanes/heavy rain. Oftentimes we know that these events are coming and they might be bad enough for us to lose power. The BAW Honda 5500 Generator is almost always here on site and can be set up with a little effort. While the freezers are important and cannot be off for too long the priority is the phone and the POS system. Once they are up and running we can focus more broadly on the freezers by calling in other resources.
+
+
+If the power is out and we expect it to be longer than an hour or we know in advance the power may be out, we may choose to run the store on generator power.
+
+
+It is best to run the store on at least two generators. One for the freezers and another for the computer systems.
+
+
+The smaller of 2 generators or one just to run the computers and no freezers can be set up in the Rt 30 lot or on the sidewalk near the silo exit. Run a long heavy cord to the 2nd floor main office window. Connect the power block at the main computer (10 outlet box on the post on the desktop.) That contains Main, the Internet router and the phone at 101. From that power block or a splitter, we can run the phone (Cisco 16 port in the Elevator room) router for the phones and a cord to Reg1 and Reg3 at the front counter (power block on the post between Reg1 and Reg3.) This generator can also run some lights in the last food aisle on the first floor. And the back side of the 2nd floor where it is darkest.
+
+
+With a large enough generator (6500W) we can run 2 two door freezers at the front counter and 2 chest freezers in the warehouse. Place this generator on the front sidewalk near the BAW entry doors ((warehouse side). Use the orange and black 220V extension cord to power one of the 2 door freezers and rotate the freezers over time. A long heavy 110V cord can be run to the warehouse to run the chest freezers and the loft freezer.
+
+
+The configuration may change based on freezers, what needs to be run and what generators we have available.
+
+
+Moving frozen food from freezers that we cannot run to freezers that we can run with the generators.
+
+
+Make signs that the power is out and we are open for business. https://docs.google.com/document/d/1A07ab2iqcuUzqhC4ImtZuKbgBCTxe_QwxNlAFcy77_g/edit?usp=sharing
+
+
+What is needed:
+Generators (BAW5500W. Garden shop 6500W or 3500W. Also JB and Tiff each have large generators)
+Gas, gas cans. With generator or Dave’s shed
+Power cords (BAW 3x heavy 100’, 50’ and some misc shorter cords. DB heavy 50’)
+Splitters (Orange 3 port splitter, in Air handling room in/on red tool box, misc other splitters)
+220 extension cord (orange and black). These are generally stored in the warehouse with the generator or on the shelves behind the rolling carts.
+        Temporarily unavailable DB 09/26/23 (Heavy 220 splitter for 2 door freezer (black with metal outlet on end.) and )
+
+
+Make sure to communicate clearly who will be filling the generator tanks so that someone doesn’t have to drive to the store at 5am for no reason and think that someone stole the gas can
+
+
+Estimate run time per gallon based on generator and load. Probably about .75 hours per gallon for 2 generators or about 7 hours
+
+
+
+
+Considerations on switching back to grid power.
+
+
+Any outlets that are GFCI may have to be reset. Especially in the bath area like the heater and pumps. The outlet on the second floor post that runs register 2 is on a GFCI breaker in the panel by the elevator room.
+
+
+The comcast router takes up to 10 minutes to reset to regain access to the internet. Timing the switch from generator back to grid power should be well thought out.
+
+
+The darts main computer must be on for the POS registers to run darts. Make sure that you consider the timing when switching back to grid power.
+
+
+
+
+Tiff’s Dumb Down thoughts
+
+
+Trigger: Power goes out
+Beginning of the day: prep to open
+End of Day (2 hours left of operation) prep and close
+Off Hours (tempy trigger) 
+
+
+Review peco website for outage estimation 
+(Wait 30 min to ensure power is going to stay off) Staff consolidate 3 door freezer and treat/bones freezer into white freezers in the warehouse and 6’ chest on second floor
+
+
+Bring generator pallet down with forklift
+
+
+6 hours with no power position generators and run cords
+Label each end of cords with tape to know which end goes into which generator and the outlet
+Generator maintenance: as power is out fill up fuel tanks every 5-7 hours of operation

@@ -1,0 +1,72 @@
+﻿Project collaboration between Braxton’s Animal Works and Apex Intelligent Systems
+
+
+Purpose/Objective:
+* To create an AI driven bot for the internal operating systems of Braxton’s Animal Works.
+   * The bot will use SOPs and process documents supplied by BAW in a shared Google Drive 
+   * Documents may be used by the bot for training and to answer any questions about the operations of the company
+   * Develop a system to create additional bots for other purposes
+
+
+Ideal outcome:
+* Work based on lean method for small deliverables that can be tested for feedback and modified before spending too much time
+* Voice activated bot that can answer in text or voice
+* Accurate responses to the questions based on the information within the documentation
+* HITL training for continuous improvement of the bot’s output and accuracy
+* Available through a private URL or internal WIKI page via browser
+
+
+How project is carried out:
+* Co-ordinate with AIS to build AI chatbot
+* Braxton’s will load all SOP and process documentation into the Google Drive shared project folder
+
+
+Start up Costs:
+* $0
+
+
+Project Costs:
+* Defining project scope
+* Gathering and organizing information
+
+
+Maintenance Costs:
+* AI GPT monthly or annual cost ~$20/mo
+
+
+Resources Needed
+Outside resources:
+* AI Dream Team AKA, Apex Intelligent Systems
+* GPTs
+   * Open AI
+   * Claude
+   * Grok
+   * Google
+      * NotebookLM
+      * Gemini
+
+
+In-house resources
+* Time
+* Learning
+
+
+Benefits of program:
+* Streamline training for new staff
+* Organize organizational information
+* Maintain consistent processes especially for non-common procedures
+* Use as model to launch customer facing and employee training AI ChatBot
+
+
+Drawbacks/Disadvantages of program:
+*  None?
+
+
+Information Resources:
+* Books/websites/whitepapers/guides?
+
+
+Alternatives to consider:
+* 
+
+Assuming this and a customer facing bot work well, there are many more projects that could be possible. An app idea that I would like to build that would benefit our customers and employees to help get the most accurate information about a pet’s diet and the ingredients of food options for them.

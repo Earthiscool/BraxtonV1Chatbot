@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+feedback_log.csv
+sync_state.json
+*.pyc
+service_account.json
+credentials.json

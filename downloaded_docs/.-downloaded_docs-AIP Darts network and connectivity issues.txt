@@ -1,0 +1,39 @@
+﻿Occasionally there are connectivity issues where a Darts computer in the office or POS can’t connect with the main server CWS
+
+
+Common errors with Darts Connectivity
+
+
+“Host not Found”:
+* This error is in the pop-up box that first says connecting to host when you log into Darts
+* Ensure the main darts server computer (Jim’s desk) is turned on and operational.
+
+
+Too many stations open:
+* There are a limited number of licenses that can be used for darts computers. If it appears that there are more open it can stop a new one from opening
+   * On any darts connected computer or main
+   * Go the the System Utilities tab in the GUI
+   * Go to “Who’s Logged In”
+      * Write the port numbers that are for redundant computers or the port numbers of the computers that you know cannot access Darts
+   * Go to “Log Off a Port”
+      * Type each port to log off one at a time
+      * It can take several minutes for each one to be disconnected
+      * Re-log on to the terminals that were affected
+
+
+At a terminal computer you get the message “Connection timed out”:
+* When Windows updates it can change the computer settings on the server.
+* If the Windows firewall is set to “ON” the terminal computers won’t be able to connect
+   * To remedy, go to the server
+      * Open the icons in the tray (^ arrow) at the bottom right of the windows screen
+      * Click the Windows Defender icon (a shield)
+      * Open firewall and network protection
+      * Make sure all firewalls are OFF. Domain, Public, and Private
+      *         * Try to reconnect at the terminal computers
+
+
+Definitions:
+Server: It is the Darts main server called CWS in John’s office, where Jim often sits. Also 101, 192.168.1.101, CWS2.
+Terminal: Any other non-server darts computer. Back office, warehouse, OFFICE-103, OFFICE-104, 192.168.1.103, 192.168.1.105
+POS: The register computers. Also REG1, REG2, REG3, 192.168.1.111-113
+   *

@@ -1,0 +1,41 @@
+﻿Email selection for removal
+Google Gmail inbox cleanup
+
+
+Thought process for deleting or saving email
+
+
+This is primarily for chad@braxtons.com and cbarone@braxtons.com but can apply to any email or documentation that should be cleaned up occasionally.
+
+
+* Unsubscribe, if possible, all purely promotional email
+   * Keep office or admin related for now, IE: invoices, orders, etc
+   * Search and Delete those email en masse
+      * In email search use the email extension for the company you want to delete. @company.com select all, delete
+   * Delete office or admin related older than 2 years
+      * In email search use the email extension for the company you want to delete and sort parameters. @company.com older_than:2y select all, delete
+* If the email cannot be “Unsubscribed” because it is a direct email
+   * Create a template to ask them to remove us from their list
+   * Search and Delete those email en masse
+      * In email search use the email extension for the company you want to delete. @company.com select all, delete
+* Information from manufacturers and vendors
+   * Delete any old information that is no longer relevant from MFGs and Vendors
+   * IE: Schedule day changes that have passed.
+   * Keep the latest price information from Vendors and MFGs
+      * catalog/sheets/PDF/XLS etc
+      * MAP information
+* Professional in nature
+   * Business organizations like MLCC, WBA, Radnor TWP
+      * Local events etc (delete past date)
+   * MFG or Vendors
+      * Recall info
+      * Current trade show info (delete past date)
+* Trade Magazines
+   * Delete older than 6 months (older_than: 6m)
+* Create a doc or use this for questions about decisions that are not listed here.
+
+
+Info on search operators:
+You can stack filters with a space in between
+older_than:Xy
+larger:Xmb

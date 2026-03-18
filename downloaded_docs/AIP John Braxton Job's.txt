@@ -1,0 +1,148 @@
+﻿Day to Day + How to Make a Deposit               
+* Check on Safe 
+* Make sure all registers add up to the total from the day before using the Z report/receipt 
+* Double-check to make sure there are not any discrepancies 
+* Fill out a deposit slip (date it for the DAY BEFORE)
+* Place into safe (only travels to the bank 2-3 times a week)
+* Go onto QB (QuickBooks)
+   * GET ACCOUNT NUMBERS FROM JOHN
+   * Select DEPOSIT and deposit money into different accounts based on if it is CASH, COUPONS, or TAXES
+   * Select DEPOSIT for a second time and enter money into different accounts based on the different types of credit cards listed on the receipt
+* Put end of day into filing cabinet based on month (most recent ones towards the front)
+* Run a PnL (profit and loss) report 
+   * Check if there is any crazy differences compared to last year or last month
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Putting Invoices Into QB
+* Check invoices (download then upload onto QuickBooks)
+   * Copy invoice #
+   * When downloading rename file to INITIALOFCOMPANY DATE INVOICE NUMBER
+   * On QuickBooks click “Add bill” click “Upload from computer”
+   * Review all invoice info before saving and closing 
+* If an invoice is mailed instead of emailed click “Create a bill”
+   * Type in company name, invoice number, bill number, category, amount, etc.
+* Take all daily coupons and place into filing cabinet | place depending on quarter 
+* If there any discrepancies check email for credit memo
+   * Same process as an invoice, except put CM at the end of the credit memo number when naming the file 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Office & Supplies
+* Receives office and supply email after Liz submits the form(s)
+   * Copy the order number(s) from email or look at list of items (sometimes the email will list no items this is normal)
+   * Head into W.B. Mason account and sign in
+   * Paste item number(s) into search bar or look up the items
+   * When checking out use credit card instead of being billed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Payroll
+Tiff Normally Processes Payroll
+* Sign into homebase
+* Check for the most recent payroll that was processed
+*  Download payroll journal and open in excel
+* Fill out payroll forms
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Miscellaneous 
+* Pay rent to the FLP
+* Once a week open up the bills and place into filing cabinet under FLP
+* Monthly Bank Reconciliation 
+   * Every month recieve bank statement that shows all income
+      * Bank income should match our income
+* Meet with vendors (insurance, trash, etc.)
+* Most monthly payments are on autopay but still check on them every month

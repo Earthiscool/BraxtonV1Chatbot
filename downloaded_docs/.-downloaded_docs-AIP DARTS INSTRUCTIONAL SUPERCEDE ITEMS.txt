@@ -1,0 +1,53 @@
+﻿Check potential to mass delete primary vendor from a manufacturer line if it has an alternate vendor. This would push the alt to primary. We can then add back an alt.
+
+
+Superseding Items when the Distributor changes the Item number.
+
+
+Step 1: Ensure the new item number is not listed as an Alternate Vendor.
+To check this:
+* Inventory Control > Inventory Maintenance > Input new item info
+   * If nothing comes up you are free to move to the next step
+   * If an item does appear:
+      * Go to Alternate Vendor Tab
+      * Click UPD (blue block) on the new item number
+         * Go to File
+         * Select Delete
+         * “OK”
+Step 2: Supersede the item
+* Inventory Control > [Other File Maintenance] > Superseded Items Maintenance
+   * Input old item number (validate correct item appeared with Description)
+   * Input new item number
+      * Hit “Escape” to exit search window when it appears
+      * Add new item? “Yes”
+      * Do you want to change information? “NO”
+         * You can change information after saving
+   * DO NOT CHECK THE “DELETE OLD ITEM” FIELD
+   * CHECK “REBUILD CROSS-REFERENCE FILES” FIELD
+   * Process
+      * “Yes”
+      * “No”
+
+
+Superseding Items that are the same Item but have been changed by the Manufacturer Ex: Bag size change.
+
+
+Follow Step 1 above to ensure the new item number is not already in DARTS.
+
+
+Step 2: Supersede the item
+* Inventory Control > [Other File Maintenance] > Superseded Items Maintenance
+   * Input old item number (validate correct item appeared with Description)
+   * Input new item number
+      * Hit “Escape” to exit search window when it appears
+      * Add new item? “Yes”
+      * Do you want to change information? “NO”
+         * You can change information after saving
+         * UPC
+         * Description
+         * FB Weight (if applicable) See instructional here
+   * DO NOT CHECK THE “DELETE OLD ITEM” FIELD
+   * CHECK “REBUILD CROSS-REFERENCE FILES” FIELD
+   * Process
+      * “Yes”
+      * “No”

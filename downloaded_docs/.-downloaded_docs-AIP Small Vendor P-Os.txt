@@ -1,0 +1,50 @@
+﻿To Create a P/O for Small Vendors
+
+
+THIS IS INSTRUCTIONAL IS FOR ORDERING THROUGH DARTS ONLY. PLEASE ADVISE CALENDAR CHECKLIST FOR VENDORS THAT NEED ORDERED DIRECTLY THROUGH THEIR WEBSITE.
+
+
+Create P/O
+From Main Menu
+Purchase Order
+Projected Order System
+Projected Order Create
+Vendor Code
+Weeks (4)
+Cheapest (No)
+Price Shop (No)
+Add Layaways (Yes)
+Ignore Minimum qty order
+Ignore min/max
+Ignore MFR Code
+
+
+Accept P/O
+From Main Menu
+Purchase Order
+Projected Order System
+Projected Sales Order Accept
+By Vendor, description
+Create P/O
+Enter
+Shipping (BW)
+
+
+Review P/O
+From Main Menu
+P/O Processing
+Select Correct P/O
+Make Changes if Needed
+
+
+
+
+Send P/O to Vendor
+From Main Menu
+Send P/O to Vendor
+Any Non-Listed Vendor txt file
+Select P/O
+Send P/O
+OK
+Review Master Email Outbox to Ensure Order Was Sent
+Note: If you are placing an order through a manufacturers direct website, there is no need to perform this step.

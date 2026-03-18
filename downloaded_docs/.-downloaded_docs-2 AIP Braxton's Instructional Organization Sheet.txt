@@ -1,0 +1,97 @@
+﻿BRAXTON’S STORE MANUAL
+
+
+This document is to ensure that Braxton’s can be fully operated by anyone at any time. Use Crtl+F to search for specific documents.
+
+
+* DARTS Instructionals
+   * System
+      * Setting Up a New DARTS Computer
+      * Common Errors At Darts POS
+      * Wireless Scanner Instructional
+      * Darts network and connectivity issues
+   * General
+      * Superseding Items When the Distributor Changes the Item Number
+      * Instructional - Creating PC/SUBPC
+      * Darts Instructional Passwords
+      * Micro Inventory Count Instructions
+   * Creating New Items in DARTS
+      * Adding New Items Into Darts
+      * Frequent Buyer WGT Categories
+      * Product Catalog Image Uploading
+   * POS Point of Sale Operations
+      * Adding A CC Token
+
+
+* Ordering/Purchasing
+   * How To Place Vendor Orders
+   * Creating a P/O for Small Vendors
+   * Seasonal Inventory Management
+   * Criteria for Purchasing New Product 
+   * Price Updates goes to drive folder will have to decide what to add
+   * GMROI Calculator goes to sheet, will have to decide
+   * Zero Peg Analysis new sheet, Zero Inventory tracking
+
+
+* Receiving/Warehouse Operations
+   * Warehouse & Inventory Receiving Process may contain broken links
+   * Reverse PO and Reopen Needs more instructions
+
+
+* Front Staff
+   * General
+      * Employee Manual
+      * Giggy Bites Order Form Form, can create instructions for this
+      * Cricut/Xtool How-To’s
+      * Becoming and Staying a 5 Star Business
+      * Customer Incident Form
+      * Employee Emergency Contact Form
+      * Notes and Messages Form Form
+      * Opening & Closing Duties
+      * WB Mason Ordering Moved
+      * Front Staff Guidelines Moved
+      * Delivery Form (Printable)
+      * How to Add Delivery Customer video needs to move
+         * How to Edit Delivery Customer video needs to move
+      * Brome Squirrel Buster Customer Help
+      * Darts POS In house accounts and Open accounts, when and how to use
+      * Inclimate Weather Closing Protocol 
+      * The Steps to “Pay” a Customer for Tennis Balls
+      * Darts Home Delivery System
+      * Editing the Google Site
+      * Daily Task List Old Update
+      * Reimbursement/Expense Form Form
+      * Customer Returns Instructional
+      * Customer Returns Form form
+      * Feeding Calculator rebuild sheet, new App
+      * In-Store Nail Appointment Link update high level
+      * Nutrition Consultation Link update high level
+      * Customer Phone Number Change
+   * Employee Training
+      * New Hire Training Checklist
+      * New Employee Trainer Checklist
+      * Annamaet Training Video Move video
+      * Retail.pet Training Modules web URL
+      * Farmina Academy Training web URL, need login
+   * Employee Documents for Print
+      * Employment Application PDF Link, move
+   * Social Media
+      * Social Media Strategy and Tools
+
+
+
+
+* Building Maintenance
+   * BAW Crisis Management: Power Outage
+   * Internet Outage
+   * Credit Card Processors Down
+   * Phones Down
+   * Using and Connecting to Blue Iris camera system via LAN and remote connection via ZeroTier skip for now
+
+
+* Administrative Documents
+   * Price Processor Instructions
+   * Google Business Suite Admin/Alias Instructions 
+   * Daily Cash Deposit Instructions
+   * Email Selection for Removal
+   * John’s Jobs

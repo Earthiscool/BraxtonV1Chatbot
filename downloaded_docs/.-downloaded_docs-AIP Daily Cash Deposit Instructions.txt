@@ -1,0 +1,30 @@
+﻿1. Retrieve full store end-of-day Z report
+   1. Locate “Cash Received” -- This is the final number we should get after adding up the cash from each drawer
+2. Get count in/out sheets for desired day’s PM and the next day’s AM
+   1. Compare to check for any discrepancies
+      1. If there is a discrepancy, check to see if it was resolved the next morning (Jim or Michaela may attach the missing amount to the count sheet)
+3. Retrieve individual registers’ end-of-day Z reports
+   1. Match each with the coupons and cash found in that register’s folder
+      1. Keep cash piles separate until the end of the process
+      2. Double-check and initial on receipt to confirm correct amounts for cash received
+   2. Separate manufacturer coupons, store coupons, and check stubs out from the rest of the receipts (returns, buy X, etc.)
+      1. All other receipts can be stapled together with the three individual registers’ Z reports
+   3. Any square receipts/credit card information should be put together, stapled (CC #’s NOT visible), and dated with the SALE date
+   4. At this point, all count in/out sheets can be recycled if no discrepancies remain unresolved
+4. Count total cash received and match it up with full store Z report’s cash received
+   1. You may use a calculator and/or separate bills into matching piles to make the process easier and less prone to error
+   2. Check off and initial on Z report
+5. Fill out bank deposit slip
+   1. Account number in upper left
+   2. Date of SALE (NOT the current date, but the date on which the sales were made)
+   3. Name: “Braxton’s”
+   4. Make sure to include any checks in the folder separately from the cash amount in the corresponding box on the slip
+   5. Total all cash & checks and write it down in the total amount box
+6. Put cash, checks, deposit slip, and calculator tape (if used) into the bank bag
+7. In John’s office:
+   1. Empty manila folders go in a box to the left of the desk
+   2. Square receipts/ CC info goes in the box on the floor opposite the desk
+   3. Store/MFR coupons, check stubs go in bin on the back of the desk
+   4. Stapled receipt pile goes in the bin on the floor to the left of the desk
+   5. Full store Z report goes in a pile to the left of the desk
+   6. Bank bag goes in the safe

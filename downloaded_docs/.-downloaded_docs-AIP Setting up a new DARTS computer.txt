@@ -1,0 +1,19 @@
+﻿When setting up a new computer for DARTS, there are a few things to do before Richard from Darts CompWare can finish.
+
+
+Set up the Microsoft Windows as local if possible (MS may force online soon 10/22).
+* Do not connect to any internet, wireless or ethernet, prior to the initial Windows setup
+   * When setting up online you must use an MS account and the system will not allow you to name the computer
+* When asked “Who will be using this computer?” 
+   * DARTS
+* Set a password
+   * CRACKERS
+* Security questions (the questions may change, use BUSTER for the answer regardless)
+   * What was your first pet’s name
+      * BUSTER
+   * What was your childhood nickname
+      * BUSTER
+   * What is the name of your oldest cousin
+      * BUSTER
+* Privacy settings
+   * Uncheck all

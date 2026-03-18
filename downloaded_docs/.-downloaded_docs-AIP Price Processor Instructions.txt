@@ -1,0 +1,169 @@
+﻿DARTS Pricing Processor Instructions
+
+
+Instructions for the use of the Pricing Processor script for cleaning vendor data before updating in to Darts via the Darts Vendor Catalog Loader
+
+
+There are several Pricing Processors, generally one per vendor, so that cleaning and updating data can be done in parallel across vendors. There is a template sheet also that can be used to create a new sheet for new vendors or manufacturers at any time. This way, because many of the files are so large, priority pricing can be focused on without creating the need for redundant work.
+
+
+Special considerations: Each distributor uses the data format that is best for them and may be different from other distributors. Also, within a catalog file the data may vary based on U/M, MFG, or other reasons that don't seem to have any purpose at all that I can understand. So be aware that the processors have a limit and you must do your best to validate the data before sending it to Darts. It’s hard to undo uploads.
+
+
+CP: Many of Central’s Vendor numbers have leading zeros and have to be handled as text in Google Sheets. For the most part, pricing is based on the individual retail sales unit and not the case to be divided by QSP. 
+PH: We use Phillips 6 digit code to indicate purchase by QSP/case and the 12 digit code (UPC) to purchase an individual item if the product is available for sale that way. We have to be diligent in updating Darts info by superseding when things change from case to individual and vise-versa.
+CS: Some Bradley Vendor numbers have leading zeros and need to be handled as text.
+NAN: Many of the QSPs don’t match ours. They may indicate a purchase minimum, not a case quantity. Do Not update QSP on import unless you are certain that it is a case quantity change from the manufacturer.
+PFX: Pet Food Experts vary the column of UPCs from each/case. It’s unclear if they have a standard. The processor will use the Darts UPC on upload. No action needed, just understand that the Darts UPC and the PFX UPC may not match.
+
+
+General steps:
+
+
+Incoming data from Vendors. Saving and preparing for processing
+
+
+* Incoming price books are either emailed monthly, on request, or downloadable from the vendor’s website. Once the data is available we can put it into the correct processor
+
+
+   * Vendor Data Collection
+      * PFX
+         * Emailed often in the first week of each month from orders@petfoodexperts.com to chad@ tiff@ wes@
+         * Subject generally: “Braxton's Animal Works Catalog”
+         * pfxcatlg.xlsx
+      * NAN
+         * Emailed in the first week of each month from Blaine to dave@ jim@
+         * Subject generally: “Braxtons Nan Month catalog”
+         * Date -Braxtons.xlsx
+      * CP
+         * Emailed in the first week of each month from blemorrocco@centralpet.com to dave@ buyer@
+         * Subject generally: “Catalog file -Month Year”
+         * 007950.txt
+      * CS
+         * Available via FTP
+            * Open a Windows File Explorer page on a computer
+            * Type: “ftp.bradleycaldwell.com” into the search window
+            * User: 04925500
+            * PSW: jU8Mhe$
+            * System will load “Inven” file folder
+            * Drag wanted files to desktop
+               * Comes in xls or txt
+      * PH
+         * Download from Phillips Distributor site as needed
+            * https://shop.phillipspet.com/apex/ccrz__homepage?store=DefaultStore#
+            * From Menu: My Account>Request Catalog
+         * Emailed from noreply@phillipsfeed.com to wes@, tiff@, and Comcast/Xfinity braxtonsaw@comcast.net account
+            * https://connect.xfinity.com/appsuite/#!!&app=io.ox/mail&folder=default0/INBOX
+         * Subject generally: “Online Catalog Request for 30-108860_BRAXTON'S ANIMAL WORKS_WebCatalog_ date”
+         * 30-108860_BRAXTON'S ANIMAL WORKS_WebCatalog_ date (as .xlsx and .txt)
+      * ZGL
+         * Download from Zeigler's Distributor site as needed
+         * https://www.zeiglersdist.com/advancedwebpage.aspx
+         * From Menu: Request Price File
+            * Customer ID#:11969
+            * Send to email of your choice
+         * From christine@zeiglersdist.com 
+         * Subject: ”Price file from Zeigler's”
+         * 11969 BRAXTON'S ANIMAL WORKS - date.xlsx
+      * GNP
+         * AskAlexis Gilbertfor a pricebook
+         * No more than quarterly
+         * She will email to tiff@
+      * APS, SCDI, MOY, ETC
+         * These and other small vendors should be primarily maintained on an as received basis in the warehouse.
+         * If there is line wide price increase like UPC or RCP, it may be easier to create a vendor catalog load file manually to upload
+
+
+Handling the Vendor information in the pricing processor
+
+
+* CS
+   * Often the Darts QSP output is correct for an order number, but BCI sends unit pricing.
+   * CS vendor number should be imported as text because there are leading zeros
+* CP
+   * CP vendor number should be imported as text because there are leading zeros
+* NAN
+   * Recycled vendor numbers are common
+      * Delete old NAN number and create new PLU if we will carry the new item
+* PH
+   * Phillips has a stand alone script with the sheet. All others have sheet based scripts that point to LibPriceProc_v4
+   * 6 or 12 digit vendor number, when, why
+   * Pricing based on correct column (6-12)
+* GNP
+   * GenPet has duplicate lines, one for catalog and another for Braxton’s contract pricing. 3IN or Customer Specific
+   * I am building a GAS to clean the book of duplicates
+
+
+PROCESSING
+* Sheet Prep/ Caution-Delete ALL
+   * Clears all old data and extraneous sheets from the processor
+   * Use when you are adding a NEW pricebook each month
+   * Caution - Deletes ALL data on the sheets
+      * In the Pricing Processor, 
+         * Go to ScriptMenu>Caution - Delete ALL
+
+
+* Export Vendor Items from Darts
+   * In the Darts GUI
+   * Inventory Control> Export Vendor Items to Excel
+   * Input Vendor code>Uncheck PC>Uncheck MFR>Export
+
+
+* Import Vendor Pricebook
+   * Review “Incoming data from Vendors. Saving and preparing for processing” portion of instructions above for appropriate vendor
+   * Download Pricing Catalog
+   * In the Price Processor
+      * File>Import>Upload>Select Downloaded Catalog>Append to Current Sheet> Uncheck Formating>Import Data
+         * Note: If Append to Current Sheet is not available; select Create new Tab and Rename VENITEMS and delete old tab
+
+
+* Pricebook Column Selection
+   * Phillips book: ScriptMenu>Set-Up
+   * All others: ScriptMenu>Info Columns
+      * Form asks you to identify the proper columns of the Vendor’s Price book to move into the Workbook. This script will take the form information and move it to the proper column of workbook
+
+
+* Sort Information to make updating easier and identify potential issues with the pricing information. Here is where much of the pricing errors will come from.
+   * sortByDiffL()
+      * Difference in price between Darts cost and Vendor’s new Net Cost
+   * sortByStock()
+      * If QOH > 0 ,MIN > 0, or PS = “Active” or “SO”; we stock it
+   * sortByGML()
+      * Gross Margin Low, Brings negative and low GM to top to identify errors or issues
+   * sortByGMH()
+      * Gross Margin High, Brings high GM to top to identify errors or issues
+   * sortBySDD()
+      * Sorts for items we carry and do not carry
+
+
+* Move to Price Stk/NStk
+   * Review pages to ensure information looks correct
+
+   * Export Price Data
+   * Go to 4 Ready for download and import Folder
+   * Download into the CWS/temp “UP” file each tab named “Stock_Price” and “Non_stock” to be imported into darts
+
+
+Exporting, Downloading and Importing to Darts
+
+
+DO NOT USE: Convert VENITEMS tab to Darts format for ITEMS Import. Takes changes made in WORKBOOK columns like PS, Pricing Vendor, Lock, Department and, MFG and updating Darts file. It also installs the FB Weight from ITEMS export that is not on VITEMS export
+   * expItems()
+
+
+Export Price to Darts Vendor Format (tab delimited) for import into darts
+   * expPrice()
+
+
+Once prices are updated in darts, we can check for only those prices that have changed and send those to customerservice@braxtons.com for stickering the shelves and products
+   * outputTest()
+
+
+Output Prep
+   * Open file named and copy/paste all info into tab Output_Prep cell B2
+   * Execute Command in scripts menu
+   * Email with prices to update will be sent to customer service email to be stickered
+
+
+Dart Sticker Uploader
+Dave: Make output prep not go anywhere and just format for upload into darts? PLU or UPC Column A  Quantity to Print Column B

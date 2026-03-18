@@ -1,0 +1,27 @@
+﻿Adding New Items into Darts
+
+
+Adding Items One at a Time
+1. Inventory Control> Inventory Maintenance
+   1. Use Vendor acronym and vendor number into Item# field (ie PH:123456, CP:123456
+      1. SPECIAL NOTE FOR PHILLIPS
+   2. If a list of items comes up, hit escape and select “yes” to add a new item.
+   3. Reference similar items and manufacturers to make description cohesive with other products.
+      1. Manufacturer, Species, Descriptors, Weight/Size
+   4. PLU will automatically populate after an item is created.
+   5. Select P/C (review other like items to select correct department)
+   6. Review vendor/distributor’s website to get case quantity and pricing information
+      1. Note: Do not input the invoiced amount, it may be severely discounted.
+   7. Input case qty and check Purchase Case as 1 IF we order it by the case.
+   8. Set stock min to 2 if it is going to be a stocking item.
+      1. Note: If the item is a special order or one time occurrence, set max to 0 and don’t input a min.
+   9. Input pricing info. And select the “Calculate New Sell Price” button.
+   10. Input UPC from vendor/distributor site.
+   11. If the item is kibble or has an Astro frequent buyer program, input the Wgt/FBP weight as follows (or review similar items).
+      1. 5=Small Bag 15=Medium Bag 25=Large Bag 40=Extra Large Bag
+   12. If the item is a regular stock item keep product status “Active”, if it is a single order item select “Special Order”
+   13. If the item has other distributors, input them under “Alternate Vendors”
+   14. Save
+
+
+Adding Multiple Items at one Time

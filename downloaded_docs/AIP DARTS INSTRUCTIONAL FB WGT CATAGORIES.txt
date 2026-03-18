@@ -1,0 +1,23 @@
+﻿Frequent Buyer program in Darts is denoted as FB or FBW
+
+
+Dog Food
+Follow these guidelines for whatever a manufacturer deems is their Small, Medium, Large, Extra Large Size REGARDLESS OF THE BAGS ACTUAL WEIGHT
+5 = Small
+15 = Medium
+25 = Large
+40 = Extra Large
+
+
+Cat Food
+Follow these guidelines for whatever a manufacturer deems is their Small and Large Size REGARDLESS OF THE BAGS ACTUAL WEIGHT
+5 = Small
+15 = Large
+
+
+Litter, Oxbow, Wild Delight, other?
+
+
+Other Items
+If a new item is being added with a current program, review the FB program requirements in ASTRO to see the parameters of that program.
+        POS/Invoice Processing > [File Maintenance] > Buy X Get Y Free Maintenance

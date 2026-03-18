@@ -1,0 +1,90 @@
+﻿Warehouse & Inventory Receiving Process
+
+
+Table of Contents:
+* Responsibilities
+* Maintaining Warehouse
+* Receiving Product
+* Email Distribution for Corrections
+* Process Customer Returns
+
+
+
+
+Responsibilities:
+* Maintain warehouse cleanliness and organization
+* Receive product
+* Coordinate with Vendors missing/extra/mispick/damaged items
+* Research products that Back order
+* Other general inventory maintenance
+* Assist with small vendor ordering DARTS Projected order system (DARTS INSTRUCTIONAL)
+* Pricing updates
+* Superseding Items DARTS INSTRUCTIONAL SUPERCEDE ITEMS
+
+
+Maintaining Warehouse
+1. Maintain the roll-up door with proper use, raising it all the way up and down as not to damage it.
+2. Sweep the warehouse floor daily, removing debris and dirt.
+3. Sweep warehouse dock bay, removing debris and dirt.
+4. Organize over-stock carts and shelves ensuring proper product rotation.
+5. Forklift maintenance
+   1. Maintain battery charge level by charging as needed
+   2. Battery water level
+   3. Call for service if any issues arise
+
+
+Receiving Product
+1. Retrieve special order paperwork from the upstairs office for the vendors that will be received during the shift.
+2. Organize inbound deliveries in the warehouse
+3. Scan and receive one vendor at a time
+   1. NOTE: You cannot have the same PO to receive open in two separate areas. So if you have it up on the warehouse computer, save and close it before opening the same PO on the hand scanner.
+4. How to Scan
+   1. Hand Scanner
+      1. Power On
+      2. “1” for Sign On
+      3. “4” for PO Receive
+      4. Type PO number and enter to begin scanning
+         1. Find PO# 
+      5. To scan multiple quantities enter the number “.” (ex: 2.)
+      6. Between scanning it will ask to print item labels. Just “enter” through this prompt
+      7. To exit PO just hit “enter” again
+   2. Desktop Scanner
+      1. Log into DARTS
+      2. Select PURCHASE ORDER tab
+      3. Select RECEIVING/SCAN ENTRY
+      4. Select PO to scan
+      5. Ensure you are always in the “scan” block before scanning product
+      6. You can enter item numbers manually by selecting within the right side of the screen for each item.
+      7. Select “Save” when you wish to close PO
+5. Missing/Extra Report
+   1. If there are new items that have not been added to the system, review step 7. 
+   2. In google drive open the document:MISSING/EXTRA REPORT WORKSHEET
+   3. Follow instructions within the Missing/Extra Report 
+   4. If a vendor mispicked and item we carry or over shipped an item, review the GMROI SHOWS document under the WORKBOOK tab. If the received amount is greater than the current MIN plus QSP we will opt to return the item(s)
+6. Receive PO
+   1. In DARTS select the PURCHASE ORDER tab
+   2. Select PO PROCESSING
+   3. Select PO to be received
+   4. Make any corrections from the Missing/Extra Report from miscounts
+   5. Select RECEIVE P/O
+   6. Select DEFAULT 
+   7. Select YES
+   8. Select NO for Item Labels
+   9. Select NO for update pricing with Pricing Matrix
+Note: Backordering items that were not shipped. In general Braxton’s does not receive backorders. There are a few cases that it may be necessary or make sense. The Natural Dog Co. requires us to reserve backorders to stay “in-line” for products that were not shipped with the bulk of our order. 
+When receiving, put the quantity originally ordered into the B/O column to the right of the Due column. When you finish and receive the the PO it will make a -2 PO with the items placed on backorder
+
+
+7. If there is an item(s) that was invoiced but not in our system, add them using DARTS INSTRUCTIONAL ADDING NEW ITEMS.
+Email Distribution for Corrections
+1. Email necessary information to the correct vendors for credits and invoices 
+   1. (use RGA/ Return worksheet) For information on who to contact per vendor
+   2. Use Email Template: “Braxton’s Order Issues” then copy and paste info from Missing/Extra Report Worksheet into email prompt and send.
+2. RGA/Returns Worksheet (needs to be built)
+   1. After emailing the vendor, input the items to be credited by each vendor
+   2. Mark status of each item (ex: emailed, RGA submitted, awaiting credit/invoice, completed)
+
+
+Process Customer Returns
+1. Process item returns Review RGA/Returns Worksheet for necessary steps for each manufacturer
+2. Input items that have been initiated for return or credit into the RGA/Returns Worksheet

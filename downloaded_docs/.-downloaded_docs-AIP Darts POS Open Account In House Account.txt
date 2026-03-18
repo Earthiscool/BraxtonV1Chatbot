@@ -1,0 +1,67 @@
+﻿Is Darts POS In house accounts and Open accounts, when and how to use:
+
+
+There are two separate non-cash accounts available in Darts. One is an “In-House Account” (IH) and the other is an “Open Account'' (O). They are used for distinctly different reasons. 
+
+
+IH is used for accounts that Braxton’s has extended credit for the user to pay at a later date. It is reserved only for municipal organizations that have been pre approved. Currently there are only 4 public IH accounts. Radnor Police and Radnor School District, Also Norristown Police and Norristown Fire Department. The Braxton’s Store Use account is also IH, but should only be used by team lead or management. There are NO other reasons to use IH as a tender on Darts.
+* If you are running a transaction for one of the above organizations:
+   * Use the phone number or search the name associated with the organization
+      * CONFIRM that it is the correct organization via phone # or other
+   * Transaction password is “OKAY”
+   * Scan items as a normal transaction
+   * Use the Invoice message to type in the buyers name and badge number
+   * At the pay screen use the “In House” button for payment
+* To receive payment on an “In House” transaction
+   * Use the phone number or search the name associated with the organization
+      * CONFIRM that it is the correct organization via phone # or other
+   * Transaction password is “OKAY”
+   * Go to the pay screen
+   * Use RA (Received on Account) as a MISC/coupon code
+   * Type in the amount on the check as a positive number
+   * The tender type should be a check
+      * Type in the check number (top right)
+      * Type in the amount of the check
+   * Finish and print a receipt
+      * Check can be put in drawer via slot in the face of the drawer
+      * Staple receipt to the check stub (the excess paper from the check) and put in the register coupon bin
+
+
+Open account is used for store credit when a customer is returning an item and is OK with store credit.
+* On account credit for returned items
+   * Use the customer account phone number
+   * Run the transaction as usual with the return item
+   * If the balance is negative and the customer would like a “store credit” use the open account button.
+   * Type in a negative (-) amount that matches what we owe the customer. IE ($)-10.29
+   * On their next transaction, Darts will ask if we want to use the on account credit.
+      * Use any amount on the Open account by default, unless the customer says not to.
+* Do Not use open account to prepay for a Special Order
+   * This is especially the case when they are returning an item and want to special order a replacement.
+   * To special order a product to replace a returned item that we don‘t currently have in stock
+      * Option 1 (Preferred):
+         * Ask the customer to bring the damaged product home until we have a replacement
+      * Option 2
+         * Use the customer account phone number
+         * Run the transaction with only two items, the return item and the special ordered item
+         * Go to the pay screen, the balance should be $0.00
+         * When the item is picked up it will say that there is a $0.00 balance due. Or if there was a difference in price there will be a “prior deposit” and some balance still due
+* On account for special circumstances
+   * In the case we have an error and don’t credit a customer properly at the time of a transaction, we can add a credit to be used next time via open account.
+   * Please ask Tiff or Dave to walk through this process so that the transaction, inventory, coupons, etc are all credited and accounted for properly.
+   * Basics
+      * Use the Open account button and type in the (negative) amount of the coupon. IE ($) -5.00
+      * Use the coupon code and type in the positive amount of the coupon. IE ($) 5.00
+* Special customer account
+   * Adding funds to the Open account
+      * There is one customer who prepays onto an open account
+      * When the check comes into the store, John will receive and verify the amount
+      * Use the customer account phone number
+      * Go to the pay screen
+      * Use the open account button and type in the (negative) amount of the check. IE ($) -1500.00
+      * Use the check button. First add the check number, then type in the positive amount of the check. IE ($) 1500.00
+      * The Balance due should now be $0.00
+      * Print receipt and put in end of day
+   * Using funds from the Open account
+      * If there is a balance, Darts will ask if you want to use the Open account balance first
+      * Use the Open account balance by default, unless the customer says not to.
+Darts POS Open Account In House Account

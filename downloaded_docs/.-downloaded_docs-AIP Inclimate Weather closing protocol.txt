@@ -1,0 +1,82 @@
+﻿Inclimate Weather closing protocol and communication.
+
+
+The default is for the store to be open. Our customers expect us to be here.
+
+
+Safety of employees and customers is a top consideration.
+
+
+Weather forecasts and school closings tend to be inflated and are often not accurate. It is a good idea to be aware of potential weather but not overly swayed by the media. Being prepared for a day before rush based on the media, however, is a good idea.
+
+
+Considerations for employees:
+Genuine risk - Perceived risk - Capability/confidence - Distance to the store.
+
+
+Questions to ask when considering closing early, opening late or closing for the day:
+* What is the most reliable weather projection?
+   * Is there real data about the path and strength of the storm
+* What are the current conditions of the roads
+* What is the projection for the next few hours
+   * Has the storm peaked and is diminishing
+   * Is it just starting and likely to get worse
+
+
+Examples of thinking:
+* Close early scenario:
+   * Store is already open
+   * Large predicted storm
+   * Beginning of accumulation (1 or more inches)
+   * Real data that storm will continue with significant precipitation
+   * NOTE: Make sure that we can get employees home safe and not send them into worse conditions by waiting too long. Start downstaffing with the furthest distance or least skilled/confident drivers.
+* Open late:
+   * Overnight storm with significant accumulation
+   * Storm will or has passed
+   * Road crews out and working
+* Close all day
+   * Overnight or early morning storm with some accumulation
+   * Beginning of large or strong storm
+   * Real data that storm will continue for hours
+
+
+Communication with employees:
+* General communication to set standards and expectations at the beginning of the winter season.
+* Day before communication. Text thread to scheduled employees by 8 pm indicating what the plans are and will update by 8am if there are changes. Ask for a response affirming their ability to arrive on time, or ask them to PM directly if they think there may be a problem.
+* Day of communication. Only if there is a change.
+
+
+Communication with customers:
+* Facebook, Instagram, Google post and Google Business Hours
+   * Google Business Profile Manager for hours: Dave@ or Tiff@ for login
+   * Go to Edit Profile > Special Hours > list times that you are OPEN-to Close time
+* Phone message in 3CX. https://braxton.3cx.us/
+* Login to 3CX via https://braxton.3cx.us/#/office/office-hours/28
+   * If it is not on the settings page, go to Settings > Language & Office Hours
+   * Go to the Weather Closing listing and click to edit
+      * Set Single Day, the date and time of closing until 17:30 for the weather message to play until the end of day message would play. IE 19 January 2025, 14:30-17:30 
+* Signage on the exterior doors
+Close early customer communication
+* Phone script for front staff when customers call to inquire if we’re open:
+   * "We are currently open, but that is subject to change as the weather continues.
+   * “We are planning on closing in the next X minutes, however.
+   * “Did you plan on heading out now? How long do you think it will take you to get here? 
+   * “Please call back before you depart to ensure we are still open.
+
+
+General communication to employees:
+
+
+Our customers depend on us for their pet supplies and depend on us being here for them. We should be here and open if at all possible and safe to do so.
+
+
+Our default is to be open and will close on a case by case basis with the most recent real time and accurate information “on the ground.”
+
+
+This means that although we will be prepared for storms and outages that we may have to close for, we will not make a decision in advance of a storm.
+
+
+Your safety is important to us and we don’t want to put you in a situation where you are at risk or considerably uncomfortable.
+
+
+For snow days that we are open, we may downstaff employees who will have the most difficulty making it into the store for work. Please let Tiff know your status of confidence and capability for driving in situations that may include rain, snow, or ice. If you have alternate transportation which you don’t have direct control of (parent or public transportation), please let us know the status of that so we can make alternate plans.

@@ -1,0 +1,46 @@
+﻿When RF Wireless scanner does not connect
+The wireless scanner may become disconnected because of a power outage or a computer file conflict.
+
+
+
+
+Power outage
+
+
+From Darts GUI. on any Darts computer
+
+
+System Utilities (Top menu)
+
+
+Kill RF Wireless Unit (Left side)
+Activate RF Wireless Unit (Left side)
+
+
+
+
+File conflict (occurs when a PO is open in the GUI and the same one is opened from the RF scanner)
+
+
+From Darts main menu(not GUI) key in the following order.
+
+
+*10. System Utilities <*>
+*Enter
+*7. Kill RF Wireless Unit
+*Enter
+*6. Activate RF Wireless Unit
+*Enter
+
+
+*Unplug the antenna power port from the unit.
+*Wait 10 seconds
+*Plug back in
+
+
+*10. System Utilities <*>
+*Enter
+*7. Kill RF Wireless Unit
+*Enter
+*6. Activate RF Wireless Unit
+*Enter

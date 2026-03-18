@@ -1,0 +1,39 @@
+﻿Customer Returns to Distributor
+
+
+1. Review the return bin in the warehouse daily for products that need to be routed or credited from the distributor.
+2. Open DARTS on the left computer monitor, and open Inventory Maintenance (under the Inventory Control tab).
+   1. If necessary, the instructions to log into DARTS are on the sideways yellow sticky note on the monitor.
+3. Access the Return Form and follow the instructions per the form on each vendor you are returning the product to.
+   1. Determine the vendor of the return being processed. (see 4a & 4b)
+      1. If the product is from a direct vendor (RCPets, Mountain Dog, etc) please send a Notel to Tiff and she will handle the return herself.
+      2. Bradley Caldwell does not typically allow customer return unless the product proves defective when purchased. We can submit that for credit via email if someone buys a bird feeder and returns it the next day for a missing or broken part. 
+   2. Sort through the return bin to determine how many other returns from this vendor are to process today.
+4. The Return Form will require the Item UPC, Quantity, Our Cost, DARTS Description, Best By Date, Lot Code, and the Reason For Return.
+   1. Scan the product’s bar code/enter the UPC to pull up the product’s page in Inventory Maintenance. The Item UPC and Darts Description are on this page.
+   2. You will find which distributor to process the return to and ‘Our Cost’ in the Adj-P/O- Sales History Page 
+      1. Do not assume the main vendor is the correct vendor to send the product through, always check to see who we got it from last.
+   3. If applicable, the Best By Date and Lot Code will be found on the product itself
+   4. The receipt attached to the return should have the Reason For Return (as well as the name and pet pass of the customer.)
+5. All returns require pictures of the products bar code, and if applicable, the expiration dates and lot codes to be uploaded here. 
+   1. Use the tablet to take the photos–the password is 0769.
+   2. Share the photos to ‘Chat’ > Braxton Animal Works (master@braxtons.com) > Warehouse. Access the Warehouse Chat on the computer and download the photo. 
+6. Email the vendor in accordance with their instructions at the top of the Return Form. 
+   1. If the vendor requires a form, open and complete said form, and then download it as a PDF. All necessary information for filling out the form should be found on the product’s Inventory Maintenance page, the customer’s account details page, and/or on the return receipt.
+   2. Open Gmail and create a draft email with the subject ‘Return Authorization Request.’ Attached the same photo.jpgs from 5c. If applicable, also attach the form PDF from 6b.
+   3. Enter the email address of the vendor and the keyword ‘return’ into the search bar of Gmail. Use past return processing emails to the vendor as a template for your own. Included UPC, Lot Number, etc as done in the ‘template.’
+   4. Double check that the email has the necessary attachments (photo.jpgs and, if needed, the vendor form). Then send the email.
+7. Double check the  inventory number for the product is accurate. Correct as needed.
+8. After completing the Return Form and emailing the vendor, write “Subbed” and your initials and dates on the receipt or note and tape to the product. Now store the product on the top shelf marked “Processed Returns.”
+________________
+
+
+Confirming Returns have Processed
+
+
+1. Review the “Processed Returns” Shelf to ensure we have received credit or an RGA for the product.
+   1. Special Note: Typically responses from vendors can take 1-3 days so allow that much time before recontacting the distributors.
+2. Review the master email account by scanning the UPC of the item into the Search bar of Gmail.
+3. Determine if the vendor/distributor wants the product back:
+   1. Yes, they do want the product back: Print the RGA if they do want it back, tape it to the product, and place the product on the ‘ready to return to distributor’ shelf for the warehouse associate to set out for pick up.
+   2. No, they do not want the product back: discard or add the product to the donation pile as appropriate.

@@ -1,0 +1,60 @@
+﻿A micro inventory check is used to adjust our inventory counts for a specific department or product line. We use DARTS and the scanners together to build a work file, scan items in, and update our inventory counts.
+
+
+Build the work file
+* Open the Google Drive
+   * Search for “Running Micro Inv Discrepancy Report” sheets file
+      * This has a more concise set of instructions you can follow along with in addition to this document
+* From the DARTS GUI main menu, select the “Inventory Control” tab at the top of the window
+   * Select “Physical Inventory System” in the left column 
+   * Select “Clear Temporary Count File” in the right column
+      * Click the yellow button in the bottom right to clear the work file in case it wasn’t cleared after the last inventory check
+   * Click on “Item Select” in the right column
+      * Vendor: leave blank
+      * Product code: this is the department you’ll be working in. If you know the department’s number, you can type it in. Otherwise, find it in the dropdown menu by clicking the “+” in the “Value” column.
+         * Make sure “Active” is checked
+      * Manufacturer: If you’re only checking a specific line, type in the 3 or 4 character manufacturer code (ex: RAWZ or RCP)
+         * This is not necessary if you’re checking a whole department. In that case, leave it blank.
+         * If you’re typing in the manufacturer code, make sure the system recognizes it. It should show the MFR’s full name in parentheses after you hit enter.
+         * Make sure “Active” is checked.
+      * Bins: leave blank
+      * Items with on-hand or history only?: Yes
+      * Click “Build Work File”
+      * Build work file will take several minutes
+
+
+Scan in items
+* Turn on handheld scanner
+   * Hit enter twice to log in
+   * Select option 2 for Physical Inventory
+* Count product by SKU 
+   * Enter number of items, period, and then scan item (EG: 11. [scan])
+   * You don’t need to scan every item in one go. The scanner will keep a running count for each SKU, so scan them as you see them and the count will automatically update.
+   * If you forget whether you’ve already scanned an item:
+      * Scan item
+         * Handheld will display how many have already been scanned. This should be enough information for you to determine whether it has been scanned yet.
+      * If the item was already scanned, you can input “negative (quantity you just scanned) period” and scan (example -1. [scan])
+* Make sure all on-hand items are counted! This includes back stock and all orders that have not yet been paid, including special orders, holds, and unpaid deliveries. Check these areas before you finish.
+
+
+Create a discrepancy report
+* In DARTS, go back to “Physical Inventory System”
+   * Select “Comparison Reports” in the right column
+      * Select “<by vend/item#, differences>” (last option). This is the Discrepancy Report, showing which items are off and by how much.
+      * It can be useful to first print the Comparison Report to the screen to a quick check for obvious differences and possible count oversights.
+         * If you see glaring issues, you can go back and recount before redoing this report and exporting it.
+      * In the top right box of options, select “Export file”
+* Go to the file finder on desktop and go into the “temp” file folder
+   * Choose the first file. The name should include “PICOMPARE” and the file will be time stamped with the current time. Open it
+      * Hit CTRL + A to highlight all items
+      * Hit CTRL + C to copy 
+* Go back to “Running Micro Inventory Discrepancy Report” Google Sheet
+   * Select “INV ADJUSTMENTS” tab at the bottom of the window
+      * Scroll down and leave a row of space after the last entry. Highlight the “A” cell of that row. (keyboard shortcut - CTRL + down arrow)
+         * Hit CTRL + V to paste the discrepancy report
+         * Enter the date in the rightmost column in Year Month Day order without dashes (ex:(YYMMDD) 210715) and extend it down for each line.
+      * Double check discrepancies found in the “Difference” column for possible errors you may have made while scanning. Large discrepancies or “perfect” numbers (like 12 for a case of cans) could indicate that there’s something you missed.
+Update inventory 
+* When done checking the discrepancies, go back to “Physical Inventory System” and select “Update”
+   * Once you’re confident with your counts, run the update through to the system
+* Once updated, select “Clear Temporary Count File” and clear the work file

@@ -1,0 +1,132 @@
+﻿If any errors occur at the POS, Please take a photo with the store “Square” cell phone and write a note in “BAW Notes and Messages” form. This will help to troubleshoot and resolve any issues. The image will be automatically uploaded to Google Photos.
+
+
+Common errors at Darts POS
+
+
+Register printer does not print receipt:
+* The obvious
+   * Paper, power, connection
+* Was the computer moved for another reason?
+   * Check the back of the computer to make sure the USB cords are snug. The printer MUST go back into the same USB port it came out of.
+* In Windows OS.
+   * Click the start button
+   * Click settings (gear icon on the left)
+   * Click “Printers & scanners”
+   * Select POSPTR(#)
+      * Open Queue
+      * Click Printer
+      * Click Properties
+      * Click “Print Test Page” (bottom right)
+      * If it prints, Windows and the Printer are working properly
+* Close and restart Darts
+
+
+Register Freezes after scanning a product:
+* Most likely a product is open in Darts “Backload”
+   * There is a data conflict when 2 computers are trying to access the same file at the same time.
+   * Call upstairs or warehouse (Dave, Tiff, Jim) to see if a product is open.
+   * Have them close the “Backload” window.
+   * That should resolve the frozen window and you can finish.
+
+
+Register Freezes when you finish a layaway sale after the receipt printed:
+* Most likely the “Purchase Order” with that layaway’s item is being received.
+   * There is no resolution to this issue. Make a note of the sale for Tiff, Dave, or John. Often the credit card was processed but the Darts transaction did not.
+      * Re-process the items on the customer’s account and finish the sale as “Online Payment” save the receipt and make a note about the issue for John to reconcile.
+   * If you are selling an item that has just come in and is still “on the pallet” ASK Receiver before selling if they are currently receiving this item.
+      * If YES, sell the item in a new transaction (not from the Layaway) and make a note to clear the Layaway later.
+      * If NO, sell Layaway transaction as normal
+
+
+Problems with credit card processing:
+
+
+Listed in order of frequency/likelihood of occurrence.
+* Credit card taking a long time to process
+* Customer Card Errors. Bad card, chip, expired, or put card in before confirming amount.
+* Pin Pad communication issue, other com issues and network issues.
+* Other errors that are non-issues and regular occurrences.
+
+
+Credit card taking a long time to process:
+* There are a few common issues if the card is taking a long time to process
+   * ERROR: “Cannot access cc X file \\REGX\creditcards\(out or cap)”        
+      * Often resolved by being patient. Wait a few more seconds and tell the customer it should be finished shortly.
+      * If it times out, try to rerun the transaction, the customer will have to re-insert the card.
+   * ERROR: “CCListener appears not to be running” or similar message
+      * Restarting the “CCListener DSS 6.5”  
+      * On the affected register click the “Services” icon. It is on the desktop and the bottom bar of each POS computer. 
+      * A new window will open. Find “CCListener DSS 6.5” and click to select.
+      * In the top left of the window click “Stop” to stop the CCListener, allow it to finish processing, about 10 seconds.
+      * Click “Start” to restart the service. 
+      * Try re-processing the card.
+   * If it appears like nothing is happening and there is no ERROR
+   * Minimize the GUI screen to look at the Darts “blue screen”. You can also get to it by clicking on the Accuterm red “A” on the bar at the bottom of the screen.
+   * There may be an error there or a question that you have to answer for the card to complete the processing.
+
+
+Customer Card Errors. Bad card, chip, card expired.
+   * Sometimes the card is bad, expired, declined.
+   * If the error is “card declined” there is likely a card or chip issue.
+   * Type “Y” in the Darts checkout screen where it asks you to acknowledge the decline and retry the card.
+   * Sometimes the machine will ask them to swipe the magnetic strip.
+   * The customer may have to use a different payment option. 
+
+
+Pin Pad communication issue, other com issues and network issues.
+
+
+   * UPDATE THIS
+   * There is an error (NAK Error on Pinpad) that indicates that it is a pin pad issue the pin pad may have to be re-initialized (re-booted). 
+   * Leave the USB plugged into the back of the computer and unplug the round power connector to power off the pin pad.    
+   * Wait 10 seconds, then reconnect the power connector.
+   * It will take the pin pad about 45 seconds to re-initialize.
+   * The pad should be working now.
+
+
+      * In rare instances the internet may be down or temporarily disrupted. This will affect all three POS stations and the phone. There is no immediate resolution.
+      * If the internet is down, usually it comes back in seconds or minutes.
+      * Retry the card.
+      * To troubleshoot:
+      * Go to a browser on the BAW Info computer and see if you can access the internet from there.
+      * Use a cell phone to Google comcast service area disruptions to see if there is a broad outage
+      * Call Comcast to check about outage at 888-xxx-xxxx
+      * We will have to process via Square temporarily. When charging via Square, use DARTS “Online Payment” from the pay screen.
+      * Use a cell based internet connection
+      * Open the Square app
+      * Login
+      * dave@braxtons.com
+      * Psw in buyer@ Lastpass
+
+
+      * There may be an internal networking issue
+      * Most issues resolve in seconds.
+      * The card can be rerun once connectivity re-establishes itself.
+      * Please record that there was an issue so I can follow through and troubleshoot the problem.
+
+
+      * There may be an networking issue on the Processor’s side
+      * Occasionally the server for the Credit Card Processor may be down
+      * This is indicated by messages like “Card processor may be down”, “Decryption service unavailable”, or similar
+.
+Other errors that are non-issues and regular occurrences:
+      * Error 3550 (?) is a timeout error that can occur for a few reasons
+      * Type “Y” in the Darts checkout screen where it asks you to acknowledge the error and retry the card.
+
+
+Remember: If you see any issues or errors not addressed here, please take a picture of (or write out) the error code. 
+
+
+Problems with Receiving processing:
+
+
+Receiving a P/O and the system shows processing but never completes.
+      * Check the registers to ensure someone is not trying to sell an item that is a special order or on that P/O
+      * Wait until the item is sold and see if the P/O closes
+      * If it does not close, close the darts computer that is trying to receive and restart DARTS 
+      * Pull up P/O to be closed and go to the line where the item that was sold 
+      * Check the item above that item to see if it was received, check the item sold than check the item after the item sold
+      * Darts receives line by line in order so most likely it stopped when it hit the sold item and everything after will need to be received still
+      * If that is the case, change everything that WAS RECEIVED to zero to not receive it again
+      * Receive P/O once everything is changed

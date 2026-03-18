@@ -1,0 +1,78 @@
+﻿Design Studio Instructional
+
+
+Creative
+
+
+Print process
+
+
+Etsy store
+
+
+
+
+Cricut Projects
+
+
+Sticker projects
+1. Create design in mid-journey using template prompts.
+
+
+https://docs.google.com/spreadsheets/d/1veSAMtf40dX5HRrcaoajVlstN4pWReUlE9-dwqC8ezI/edit?usp=sharing
+Insert Picture
+
+
+2. Add design from mid-journey to CCricut/Xtool instructionalanva to remove background and download as a PNG.
+Insert Picture
+3. In Cricut design software, start a new project and upload an image as a “Print then Cut”.
+4. Add images to canvas and resize the image to 2.5 inches.
+5. Add offset and size to 0.08 inches, change offset color to white.
+6. In the “Layer Menu” shift+select the image layer and offset layer to highlight and select “Flatten”.
+Insert Picture
+7. Repeat process for each image being printed.
+8. In the printer, place sticker paper in the paper tray with the face of the sticker material face up.
+9. Print as is and do not change any settings.
+10. Apply sticker sheet to the top left of the cutting mat and roll till flat on the surface.
+11. Follow cricut guided steps to cut.
+
+
+
+
+Heat press projects (shirts, canvas bags, hats)
+
+
+
+
+Xtool Projects
+
+
+Mug projects
+1. https://www.youtube.com/watch?v=S-HPPpUi3uo
+   1. Power: 55
+   2. Speed: 50
+   3. 160 lines
+   4. Level with kickstand
+
+
+Coasters
+1. Load “4IN Coaster Template” in xTool
+2. Turn on xTool Laser cutter with main power switch
+3. Connect to “xTool D1 Pro” in xTool software
+4. Select materials
+   1. Slate
+   2. Cork: Cork Desk Pad (2pcs)
+   3. Wood
+5. Import images from Canva and place in circular templates
+Insert Picture
+6. Physical set-up:
+   1. Place physical template in laser cutter
+   2. Load template with coasters
+   3. Align laser with the “0” corner
+7. Process
+   1. Adjust laser appropriately during “Framing” process
+   2. Start engraving
+
+
+Wood ornaments
+1. Select design template

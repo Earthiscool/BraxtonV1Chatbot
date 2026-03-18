@@ -1,0 +1,67 @@
+﻿Opening
+
+
+1. Enter store through warehouse
+2. Turn on all lights
+   1. Master switch in warehouse (right next to the door to the outside)
+   2. Upstairs (switch next to Dave’s office)
+   3. Monitors/TV on first floor
+   4. Freezer lights
+3. Open safe and bring drawers down to their respective registers on the sales floor
+   1. Turn knob left (counterclockwise) 3+ times to reset
+   2. STOP at 25
+   3. Right - Pass 40 twice, stop at 40 THIRD time
+   4. Left - Pass 62 once, stop at 62 SECOND time
+   5. Right - STOP at 2
+   6. Kick bottom left corner and twist handle to the right at same time to open the safe
+4. DARTS on register 1 through 3 should be ON. If not then
+   1. Click DARTS icon on desktop
+   2. Username: DARTS
+   3. Password: CRACKERS
+   4. “Y” for GUI
+   5. Location: REG1 or 3
+   6. User: COUNTER
+   7. PSW: COUNTER
+   8. Click option 1 “Point of Sale”
+5. Use the Darts POS Count Drawer feature to count registers in. Make sure the amount in each one = $100.00
+   1. Use the Count Drawer feature
+      1. Enter your clerk number
+      2. Type $100.00 as new opening balance (at the bottom)
+      3. Count coins and cash
+         1. Remember to add rolls of coins into the respective line (rolls: $0.01=50, $0.05=40, $0.10=50, $0.25=40, so 50,40,50,40)
+         2. You can advance with TAB or ENTER, you can go back with the mouse pointer or SHIFT+TAB
+      4. Print, put printout in end of day bin at register 1.
+      5. Save before exiting
+6. Open pet baths
+7. Record and submit task review walkthrough.
+8. Open the front doors at 9:30 (or slightly before if there are customers waiting and you’re ready).
+
+
+________________
+
+
+Closing
+
+
+1. Close pet baths at 5:00
+2. Close front doors at 5:30
+3. Make sure to print out and sign full store “Z” report along with each individual register report
+4. Use the Darts POS Count Out Drawer feature on the main page to count registers out. Make sure the amount in each one is $100.00 when finished
+   1. Use the Darts POS Count Drawer feature
+      1. Enter your clerk number
+      2. Type $100.00 as new opening balance (at the bottom)
+      3. Count coins and cash
+         1. Remember to add rolls of coins into the respective line (rolls: $0.01=50, $0.05=40, $0.10=50, $0.25=40, so 50,40,50,40)
+         2. You can advance with TAB or ENTER, you can go back with the mouse pointer or SHIFT+TAB
+      4. Make sure that the amount in “Overall-Opening” matches the “Z” for cash.
+      5. Remove the amount stated at the bottom of the window “Overall-Opening”
+      6. Print, put printout in end of day bag
+      7. Save before exiting
+5. Bring drawers up to the safe
+   1. Open the safe by kicking the bottom left corner of the door and twisting the handle at the same time
+   2. Locate the keychain to open the middle box (bigger key) and cash box (smaller key). It will have a paw-shaped keychain on it, found in the second drawer in the top row of the safe
+6. Put manila envelopes in a bank bag (found on top of the safe) and stick it in the large box in the middle of the safe (opened with the larger of the two keys you just picked up). Close and lock the box.
+7. Make change using cash from the cash box, ensuring to the best of your ability that each drawer has at least 3 10’s, at least 4 5’s, around 15 1’s, and no larger bills. Ensure that each drawer has at least one of each type of coin rolls.
+8. Put finished drawers in the bottom of the safe next to the cash box, close and lock safe (by spinning the dial).
+9. Turn off lights (locations given in opening instructions)
+10. Lock the door behind you

@@ -1,0 +1,79 @@
+﻿* Link to BAW Help Center: https://sites.google.com/braxtons.com/help-center/
+   * Accessible by anyone with a share link
+* Link to editing screen for BAW Help Center: https://sites.google.com/d/1qBtdsyh9p_2MsJ93GvmhI6wpKY66Hjqs/p/1ubgKF0UwKY7a_LmyuRAaxU1JH4g2D0Cf/edit
+   * Accessible by all with editing permissions
+* Link to docs on “Procedures” page: https://drive.google.com/drive/folders/1ghZYF4nKOnslLs1Jqtr8Ydtv7icNGo4N?usp=sharing
+   * Accessible by master@braxtons.com or customerservice@braxtons.com
+
+
+To edit the site:
+
+
+* Follow the link to the editing page (second from the top)
+   * The link takes you to the page editor for the homepage. You can navigate the pages either by clicking through the options in the navigation bar up top (excludes hidden pages) or by clicking into the “Pages” tab at the top of the editing window on the right.
+   * The “Preview” button is third from the left along the top toolbar (it looks like a laptop and a smartphone). You can use this to see what the page would look like to a viewer on desktop, tablet, or mobile before publishing.
+   * To share the site with a new viewer or editor, click the share button on the top toolbar and type in their email address. Then, give them the appropriate privileges from the dropdown menu on the right. Click “Send” when done to email the share link.
+* To add a new page:
+   * Go to the “Pages” tab in the editing window
+      * Click the (+) at the bottom of the screen
+      * Name the page
+   * If you want the page to be visible as a link from the home screen, leave it as is. If you want it hidden as a link from another page, click the three dots to the left of the page’s name in the “Pages” tab and choose “Hide from navigation.”
+   * Once the new page is created, you can alter the header/banner by hovering the mouse over it and choosing “Header Type” from the pop-up menu on the bottom left.
+   * You can make a page with “Subpages” (shown in a dropdown menu from the main navigation bar) by creating a new page, clicking the three dots, and choosing “Add subpage.”
+   * To delete a page, click the three dots next to its name and choose “Delete.”
+* To add text, images, or buttons/links:
+   * You can quickly add text, images, etc. by using the buttons at the top of the “Insert” tab in the editing window.
+      * Images can be uploaded from a file or taken off the internet through search, URL, or your own Drive.
+   * Simple buttons can be added from the “Insert” tab by clicking “Button.”
+      * You only need to label the button and paste the link.
+   * To add picture-based buttons/links, choose from the “layout” section in the “Insert” tab. This will provide a number of blank boxes you can label and add images and links to.
+      * If adding to a previously existing page, you can simplify the last step by hovering over a row of picture-based buttons and choosing “Duplicate Section” from the three icons on the left. From there, you can edit the copied buttons with a new image and link, click and drag them to the appropriate spot, and delete the rest of the duplicate row. This way, you can guarantee that your picture-based buttons have a consistent format throughout the page.
+   * To add information to a picture-based button:
+      * Write a concise, but sufficiently descriptive caption.
+      * To add an image, click the (+) in the center of the button.
+         * You’ll have the option to choose between “Upload” (for desktop files), “Select Image” (for URLs or to search for images) and “Drive” (for your own drive).
+      * To add a link:
+         * The button must have an image first.
+         * After adding the image, click on the button so you are only highlighting the image. A toolbar will appear on top of the image. Click the third icon, which looks like a chain, to add a link.
+      * Linking to another page:
+         * When adding a link, a dropdown menu of the site’s pages will appear as options. You can choose one of these to quickly link two pages through a button.
+      * To edit an already existing button:
+         * The link can be changed the same way it was added. Just delete the existing/old link and paste the new one in.
+         * To change the image, click the three dots at the end of the image’s toolbar. Choose “Replace Image.”
+      * Videos will have a play button and can be paused, adjusted for volume/speed, etc. like a YouTube video.
+
+
+
+
+Other Functions:
+
+
+* Other inserts (ordered top to bottom from “Insert” tab):
+   * Layout
+      * Add picture-based buttons or images with captions. You can choose how many frames and which orientation you’d like.
+   * Collapsible text
+      * Section for a header (always shown) and a section for the hidden text. Text revealed by clicking a down arrow to the right of the text.
+   * Table of contents
+      * Automatically updates with a link to each header added to the current page.
+   * Image carousel
+      * Can cycle through pictures automatically or manually. You can add captions to each picture and control the speed at which they transition.
+   * Button
+      * Simple button that matches the color scheme of the site. The button has a label and a link that it follows.
+   * Divider
+      * Adds a dividing line in between two sections on the page.The dotted lines dividing the sections in the editor don’t show up when the site is published, so if you’d like to keep a line, use a divider instead.
+   * Placeholder
+      * Creates a new picture-based button without a caption.
+   * YouTube
+      * Can link directly to a YouTube video.
+   * Google Workspace icons
+      * Upload from Google Workspace.
+* Themes
+   * The “Themes” tab shows six pre-made themes for the website. This is helpful when starting a new project. The more features you add to the website, the more apparent the theme will be.
+* Site Settings
+   * Find this menu by hovering over the navigation bar and clicking the gear icon that appears to the left. From here, you can:
+      * Change the appearance of the navigation bar
+      * Add a company logo to the navigation bar
+      * Add a favicon that appears on the site’s tab on the viewer’s screen
+      * Select the color(s) to use for he site’s theme
+      * Create an announcement banner for the site
+      * View site analytics (need to pair with a Google Analytics account)

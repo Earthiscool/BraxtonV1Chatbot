@@ -1,0 +1,41 @@
+﻿POS Point of Sale
+
+
+Note: You must use a POS terminal with a credit card processor.
+
+
+Adding a Credit Card Token to a customer’s account.
+A token keeps a customer’s credit card information in the system and allows its use without the number being visible. We will be adding a tokenized card for accounts that want us to maintain a “card on file” for future transactions like deliveries.
+
+
+From the Point of Sale screen
+* Key in Clerk number
+* Key in Customer account number or create a new customer if necessary
+* In Customer file
+   * Click the CC Token button (small yellow toward the bottom right)
+   * Click the UPD blue button to update info if you are changing card info.
+   * If Customer is present, click “Card Present” (Preferred)
+      * Follow prompts like normal transaction
+   * If no customer, Click Manual entry
+      * Type card information on the CC terminal
+   * Save customer file information when finished
+* To use CC Token during a transaction
+   * On the pay screen of the transaction use the Credit Card Entry as normal
+   * Add the value to be charged
+   * Click the third option, “Token”
+   *  Click the option that comes up as the credit card number XXX1234
+
+
+________________
+
+
+Team,
+
+
+From now on, we will not be using the message field in a customer’s account to retain their Credit Card Info. We will be using the “Token” System in darts. I have attached the instructions on how to do this. If you find an account that has a CC number in the message field, please convert it to a token using the guidance attached, or ask a team lead for help. Once the token is added, remove the CC number from the message field. If you create any recurring deliveries, input them as CC Tokens from here on out.
+
+
+Thank you for your help with this.
+
+
+Tiff

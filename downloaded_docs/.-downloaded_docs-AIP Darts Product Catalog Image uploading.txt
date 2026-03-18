@@ -1,0 +1,15 @@
+﻿Take photos of product
+Save photos to drive
+Download photos from drive
+Extract photos
+Open images one by one in paint
+Resize to 20 ?? % I THINK
+Add Darts nomenclature to image
+“Save as”  plu-darts nomenclature (JPEG)
+Move image to network > cws2 > images
+In notepad copy image name to be pasted into darts
+Example: \\Cws2\images\203841-IMARC BONE TAG LG RED.jpg
+In darts, inventory maintenance, pull up item, copy and paste file name into image field, save
+To categorize, inventory control, common items/categories processing, common items/categories maintenance
+Choose category, add line, insert PLU, qty 1, save
+Delete images from any folder they saved to other than the final network folder

@@ -1,0 +1,47 @@
+﻿To Create New Departments (P/C)
+Determine what department you need to create by reviewing the Product Code Report.
+Inventory Control > [Other File Maintenance] > [Product Code Sub-System] > Product Code Report
+
+
+Web Main Category: Species (Dog, Cat, Wildbird, ETC)
+Web Secondary Category: Food Ex: dry, wet, frozen OR Non-Food Ex: toys, treats, equipment
+Web Tertiary Category: Food Ex: National or Holistic OR Non-Food Ex: tug toy, collars, cleaners
+
+
+After determining the correct sequence for the Product Code, go to the Product Code Maintenance.
+Inventory Control > [Product Code Sub-System] > Product Code Maintenance
+
+
+Enter new code > Select “yes” for create new > Fill out Items in Red
+
+
+Description: Use established code system see here
+Cost Default (% of sell price): 1-GM% (inverse of the margin)
+Inventory g/l acct: 00000000 (copy/paste into all right hand columns that say “g/l acct”)
+
+
+Set up Price Matrix
+Set up Matrix distribution according to this document.
+Inventory Control > [Price matrix system] > Sell Price Matrix Entry
+Input New Product Code > Display Record > Select “yes” for create new
+
+
+Test:
+From Amount:
+To Amount:
+Base:
++/-:
+$/%:
+Amount:
+9’S Rule:
+29/49/79/99 Rule:
+
+
+Move Items into New Departments
+Export and Import Main Parts Data Instructions here. (Line 9 is Export)
+Open ITEM.TXT file > Copy all > Paste into Google Sheet
+>Under P/C Column, adjust items to new department code
+Download as tsv file
+Open TSV, Save As ITEMS as a text file into CWS/TEMP
+Confirm “yes” you would like to change the file
+Export and Import Main Parts Data Instructions here. (Line 38 is Import)

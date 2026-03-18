@@ -1,0 +1,81 @@
+﻿Gmail Alias
+https://support.google.com/a/answer/33327?hl=en
+
+
+Renaming a workspace user
+https://support.squarespace.com/hc/en-us/articles/208308718-Renaming-a-Google-Workspace-user
+
+
+Make a user a super admin
+You're seeing steps for assigning admin roles to users at braxtons.com.
+Here's how to grant a user full access to your Admin console:
+You must be signed in as a super administrator for this task.
+1. From the Admin console Home page, go to Users.
+2. In the Users list, find the user. For tips, go to Find a user account.
+3. Click the user’s name to open their account page.
+4. Click Admin roles and privileges.
+IMAGE
+5. Click the Super Admin role.
+This displays a  slider next to each role.
+6. Next to the Super Admin role,  click the slider so it's marked Assigned  .
+7. Click Save.
+Tip: In the Privileges section below, you can see all the user's privileges.
+8. Important: Have the new administrator add recovery options to their account
+The user typically becomes an admin within a few minutes. However, it can take up to 24 hours.
+When an admin with the Super Admin role signs in to their account, they arrive at the Admin console Home page. Here, they see all controls for managing your organization's user accounts and services.
+Add an email alias for a user
+You can add up to 30 aliases for each user, at no extra cost.
+Tip: Try the Home page quick link. On your Admin console Home page, click Create an alternate email addressenter your userclick Proceedgo to step 5 below.
+   1. From the Admin console Home page, go to Users.
+   2. In the Users list, find the user. If you need help, go to Find a user account.
+   3. Click the user’s name to open their account page.
+   4. Click User information  Alternate email addresses (email alias). 
+   5. Click Alternate email and enter an alternate username (the part of the address that appears before the @ sign).
+Note: You can't create an alias currently assigned to someone else, either as a primary address or alias.
+   6. (Optional) If multiple domains have been added in your Admin console, the field to the right of the @ sign is a menu listing available domains. Select a domain for the alias address.
+Note: Domains added as a domain alias don't appear in this list. A domain alias applies for everyone in your account and can't be customized for a single user.
+   7. Click Save.
+   8. (Optional) To return to the user’s account page, at the top right, click the Up arrow  .
+Within 24 hours (and often sooner), the user will begin to receive email sent to this address.
+Remove a user's email alias
+      1. From the Admin console Home page, go to Users.
+      2. In the Users list, find the user. If you need help, see Find a user account.
+      3. Click the user’s name to open their account page.
+      4. Click User information  Alternative email addresses (email alias). 
+      5. At the right of the alias you want to remove, click Remove .
+Note: An alias with no Remove option was automatically added as a domain alias. This gives all your users an alias at this same domain. You can't remove the alias for just one user. Instead, you need to remove the domain alias.
+      6. Click Save.
+      7. (Optional) To return to the user’s account page, at the top right, click the Up arrow 
+It can take up to 24 hours for the alias to be removed.
+Delete one or more users
+You're seeing steps for deleting users at braxtons.com.
+Tip: Try the Home page quick link. On your Admin console Home page, click Delete a userenter your userclick Proceedgo to step 5 below. 
+         1. From the Admin console Home page, go to Users.
+         2. (Optional) To delete a single user:
+         * In the Users list, find the user. For details, go to Find a user account.
+         * Point to the user you want to delete and click MoreDelete user.
+IMAGE
+            3. (Optional) To delete multiple users:
+            * From the Users list, check the box next to each user that you want to delete.
+Tip: If all users belong to the same organizational unit, select it on the left to find the users more easily.
+            * At the top of the page, click MoreDelete selected users.
+IMAGE
+               4. (Optional) Depending on your privileges as an admin, choose an option:
+               * Delegated admins—To confirm that you understand the impact of deleting the account, check the boxes.
+               * Super admins—To transfer ownership of user content:
+               * Make sure Transfer ownership of this user's data to another user is selected.
+               * Under Select data to transfer, check the boxes next to each option you want.
+               * In the New owner's name box, enter the user's name or email address that you want to transfer the files toselect the account you want.
+               * (Optional) If you don't want to transfer the user's data, select Don't transfer data.
+                  5. Click Delete User or Delete Users.
+If you transfer data, the deleted user's account is suspended until the data transfer ends. After the transfer, the account is deleted and an email is sent to the contacts you set up in your Google Admin console. For details, go to Send billing and account notifications to another admin.
+TRANSFER OWNERSHIP OF ALL DOCUMENTS IN GOOGLE DRIVE
+If you are an Administrator, you can transfer ownership of all documents in the Drive from one user in your domain to another. Being able to transfer the ownership of all documents can be useful if the original owner is leaving the organization. Once a user leaves the domain, their documents cannot be transferred. If this happens, Administrators are able to restore the account for five days and transfer the documents that way.
+                  1. Sign-in to the Google Admin console.
+                  2. Go to Apps > Google Apps > Drive.
+                  3. Click Transfer ownership.
+                  4. Complete the Document ownership transfer section:
+                  5. In the From field, enter the username of the current owner and select the user’s domain.
+                  6. In the To field, enter the username of the new owner and select the user’s domain.
+                  7. Click Transfer documents to save.
+The newly transferred documents are then automatically organized in a single new folder, titled with the previous owner’s email address, in the new owner’s Drive. The original owner will still maintain editing privileges until their account is deleted or their edit permissions are revoked. Unfortunately, the Admin Console does not provide a way to change document owners, collaborators, and sharing settings individually or in bulk.

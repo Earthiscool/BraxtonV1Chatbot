@@ -1,0 +1,45 @@
+﻿Customer File Maintenance
+
+
+POS/Invoice Processing>File Maintenance> Customer Maintenance>Customer Maintenance
+OR
+From the POS>Point-of-Sale Entry screen you can manage the customer file. After entering the customer number, click the Drop down arrow to the right of the customer number entry box
+
+
+Mandatory Fields (fill all unless specifically requested by the customer to leave blank (type NA))
+
+
+
+
+
+
+We must have implied permission to send marketing email to our customer. However we may need email for other reasons like Astro.
+* Email: Make sure it is typed accurately and has the correct extension, .com, .net, .org.
+   * If they want the newsletter, all we need is an accurate email address. The “Mail Code” will be blank
+   * If they do not want to have marketing email sent, mark “Mail Code” (far right of customer file screen) as NOMKGT.
+   * If they have previously unsubscribed from our newsletter “Mail Code” will say OPTOUT 
+
+
+
+
+Customer Phone Number Change
+
+
+POS/Invoice Processing
+>[File Maintenance I]
+>>[Customer Maintenance]
+
+
+Two different changes are:
+1. Customer wants to change number >>>Customer Account Re-number
+2. Customer wants to merge with another account >>>Customer Account Merge
+
+
+Both of these options will ask the same questions. Ensure you put the OLD phone number in the number they no longer wish to use, and the NEW number in the new number field.
+
+
+After a new number is entered into the field, hit enter. The message will confirm there are no accounts with that number present. Hit Yes, then the yellow “Update Customer” button.
+
+
+Possible Error Message: “Item present. Request Rejected”
+If this message appears, you must first go into Customer Maintenance in the main menu and remove the new phone number from one of the phone fields. Then retry.

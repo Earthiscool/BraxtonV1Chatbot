@@ -1,0 +1,130 @@
+﻿Criteria for purchasing new product
+
+
+See also 
+Inventory Freeze 200612
+
+
+What do we need to know about current inventory and departments to compare new products to? What is the easiest way to get this information on a consistent basis and/or automatically like a dashboard? MMG sheet
+
+
+Can we create more objective standards to replace subjective ideas? Can we score certain qualities easily?
+
+
+Add budget or limit standards for different departments based on volume and roi
+
+
+What to think about to justify a purchase in edge cases. Ask, “Is it…
+* True novelty, but intuitive and easy to understand. Vermont Chewman, Furminator, Greenies
+* Something many pet owners need, whether they know it yet or not. Furminator
+* Ability to test with a reasonable amount/investment.
+* Not redundant or cannibalistic with other current products.
+   * If redundant, is it a significant improvement and better value to what we have? So much that we can get rid of the older product?
+      * This could be for us or the customer. IE Easier to buy, better quality, value to customer, easier to use, solves a problem better
+      * We have to overcome existing brand recognition with obvious improvement. IE Nature’s Miracle/Petastic
+   * OR the market is eager for additional capacity or options?
+* Does it replace a good product that sold well that we can no longer get?
+   * Why can’t we get the other product? Low adoption? Not a sustainable business or product?
+   * Priced out of our market?
+      * Big box sells near what we buy for?
+* High volume sales, consumable, above average profit.
+   * Line extension
+   * Brand recognition
+   * Strong and growing department
+* Does it have market support, as in many customers asking for it by name. Or great merchandising POP, like engaging video, display, presentation?
+   * Manufacturer advertising or ad dollars to support Braxton’s
+   * Committed vendor support. Demos, consumer promos.
+
+
+Philosophy
+* Philosophy fit, quality
+   * Quality
+      * Build, durability, feel, materials
+   * Company alignment, values
+   * Ownership of company
+      * Small (but big enough), Private, Family
+         * Large Corp, Equity can lead to changes sooner than later
+   * How long in biz
+   * “Promises, Commitments” (for now)
+   * Is it white labeled?
+      * Who manufactures the food, treats, and products?
+      * Who sources ingredients or raw materials?
+
+
+Back Office
+* Expected (realistic relative to competition) profit margin (GPM%, MSRP, MAP)
+   * Department based
+   * Retail price competitive with online at our standard GM%?
+   * Protection from the internet and predatory pricing (enforced IMAP)?
+* How similar to existing product
+   * Is it novel, compliment existing, or redundant
+      * Disruption to existing products
+   * What would you say, from a customer perspective, is special about your food or product
+   * Value to customer, same or better than existing solution
+   * Be careful of buzzword assumptions. Do customers primarily want “sustainable”, “organic”, etc. They want a solution first, so how much of a premium are customers willing to pay for those attributes?
+* What is the availability?
+   * Is the Vendor easy and enjoyable to deal with?
+      * Our Advocate
+      * Easy to order, easy to return, fast to correct problems
+      * Responsive to requests, info etc
+      * Easy to pay
+      * Just business, no sad stories
+         * No “Just help me out”
+   * Direct
+      * What should we look for in order to choose a direct vendor?
+         * There is an inherent issue when ordering direct
+         *          * Line that is not too big (more SKUs make it hard to maintain the proper distribution of items in stock)
+         * How fast we expect the product to move relative to:
+            * Minimums, or minimums for favorable shipping
+            * Turn time from order to on shelf
+   * Distributor
+      * Exclusive or multiple (pref multiple)
+* Store/Space
+   * Is there space for it inline/on shelf
+   * Is the department a high volume department/high profit
+   * Is it a high volume and growing segment?
+      * Shrinking, stable, growing?
+      * small, large 
+
+
+Customer
+* Customers asking for it or similar
+   * Does it solve a problem that the customer knows they have
+   * Is it easy to understand, even intuitive or does it need to be explained or sold?
+   * Is there a current market for the product
+   * Does the company have direct consumer marketing to build awareness. Or a plan to build it out?
+* Packaging, marketing, company support
+   * Good looking, customer friendly packaging
+   * Consumer facing marketing to drive sales
+   * In store support, demos, training, employee training
+      * Supports Astro program
+   * Number of SKUs
+      * Enough but not too much
+
+
+
+
+Different departments take different thinking
+
+
+We should be cautious, even slow to adopt
+* Dog and cat food and anything that has a high threshold for change, has inertia, and pain of disconnect:
+   * In certain departments of inventory there is inertia, it takes longer for people to adopt and buy.
+      * The customer has to be educated about the purpose or reason to switch buying habits.
+      * There has to be a compelling reason and generally takes a long time to build a brand loyalty and following.
+   * The opposite is if we have to discontinue a food that we have decided to carry, there is a pain of disconnection. 
+      * Often there are a few customers who don’t want to switch off the food, causing us to make some hard decisions and upsetting those customers, keeping just a few skus on hand for them, or shifting to a subscription order. The later two are less desirable.
+It's easier in more flexible departments
+* Treats and toys are good examples:
+   * Customers are willing to buy as impulse
+   * Less brand loyalty, less need to stay with the same
+   * Can be seasonal, or temporary “in and out” 
+   * Less issue with elimination of product or line
+   * Typically lower initial/test investment of time, energy, and money
+
+
+Developing a strong Distributor Rep relationship through a period of exclusivity as a benefit of bringing the right products to our attention and work to get a new product or line(especially food)
+* Exclusive for X months or a trigger to move beyond
+   * Fill rate
+   * Massive price change, (allow to counter)
+   * Rep problems or change of rep
