@@ -595,9 +595,26 @@ if st.session_state.admin_mode:
     st.markdown("---")
     if feedback_data:
         st.markdown("### 📥 Download Feedback Log")
-        with open(FEEDBACK_FILE, "r") as f:
-            st.download_button("📥 Download CSV", f.read(),
-                file_name="braxton_feedback.csv", mime="text/csv")
+        import io as _io
+
+        output = _io.StringIO()
+        writer = csv.writer(output)
+        writer.writerow(["timestamp", "question", "answer", "rating",
+                         "comment", "relevance", "groundedness", "completeness", "overall"])
+        for row in feedback_data:
+            writer.writerow([
+                row.get("timestamp", ""),
+                row.get("question", ""),
+                row.get("answer", ""),
+                row.get("rating", ""),
+                row.get("comment", ""),
+                row.get("relevance", ""),
+                row.get("groundedness", ""),
+                row.get("completeness", ""),
+                row.get("overall", ""),
+            ])
+        st.download_button("📥 Download CSV", output.getvalue(),
+                           file_name="braxton_feedback.csv", mime="text/csv")
 
 # ══════════════════════════════════════════════════════════════════════════════
 # MAIN CHAT UI
