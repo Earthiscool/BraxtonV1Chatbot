@@ -499,27 +499,6 @@ if st.session_state.admin_mode:
         if st.button("← Back to chat"):
             st.session_state.admin_mode = False
             st.rerun()
-        if st.button("🧪 Test Sheets Connection"):
-            try:
-                import gspread
-
-                creds = service_account.Credentials.from_service_account_file(
-                    SERVICE_ACCOUNT_FILE,
-                    scopes=[
-                        "https://www.googleapis.com/auth/spreadsheets",
-                        "https://www.googleapis.com/auth/drive"
-                    ]
-                )
-                gc = gspread.authorize(creds)
-                sh = gc.open_by_key(SHEET_ID)
-                ws = sh.sheet1
-                ws.append_row(["TEST", "test question", "test answer", "test", "", "", "", "", ""])
-                st.success(f"✅ Connected! Sheet: {sh.title}, Tab: {ws.title}")
-            except Exception as e:
-                import traceback
-
-                st.error(f"❌ Failed: {e}")
-                st.code(traceback.format_exc())
         st.markdown("</div>", unsafe_allow_html=True)
 
     st.markdown("<hr style='border:none;border-top:2px solid #E2DDD6;margin:0 0 1.2rem;'>",
