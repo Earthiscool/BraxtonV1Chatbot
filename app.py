@@ -30,72 +30,63 @@ if _sa:
     SERVICE_ACCOUNT_FILE = _tmp.name
 else:
     SERVICE_ACCOUNT_FILE = "service_account.json"
-print(f"DEBUG: SERVICE_ACCOUNT_FILE = {SERVICE_ACCOUNT_FILE}, exists = {os.path.exists(SERVICE_ACCOUNT_FILE)}, SA_JSON set = {bool(os.environ.get('SERVICE_ACCOUNT_JSON'))}")
 
+FOLDER_ID        = os.environ.get("DRIVE_FOLDER_ID", "")
+ADMIN_PASSWORD   = os.environ.get("ADMIN_PASSWORD", "")
+SCOPES           = ["https://www.googleapis.com/auth/drive.readonly"]
+SHEET_ID         = os.environ.get("SHEET_ID", "1IBJzo1GOv8KgwmtKJRBmbgphOoI8HhSVaJXlIXPRv4E")
+CHAT_LOG_SHEET_ID = os.environ.get("CHAT_LOG_SHEET_ID", "1JbCE-HnvRBtSGTtksqzQlNCjmMnb1cErwdc7dWQFBcg")
 
-FOLDER_ID            = os.environ.get("DRIVE_FOLDER_ID", "")
-ADMIN_PASSWORD       = os.environ.get("ADMIN_PASSWORD", "")
-SCOPES               = ["https://www.googleapis.com/auth/drive.readonly"]
-SHEET_ID          = os.environ.get("SHEET_ID", "1IBJzo1GOv8KgwmtKJRBmbgphOoI8HhSVaJXlIXPRv4E")
 # ── Corrections ───────────────────────────────────────────────────────────────
 def load_corrections():
-    # Try Google Sheets first
     try:
         import gspread
         creds = service_account.Credentials.from_service_account_file(
             SERVICE_ACCOUNT_FILE,
-            scopes=[
-                "https://www.googleapis.com/auth/spreadsheets",
-                "https://www.googleapis.com/auth/drive"
-            ]
+            scopes=["https://www.googleapis.com/auth/spreadsheets",
+                    "https://www.googleapis.com/auth/drive"]
         )
         gc = gspread.authorize(creds)
         sh = gc.open_by_key(SHEET_ID)
-        ws = sh.worksheet("Corrections")
-        rows = ws.get_all_records()
-        return {row["question"]: row["answer"] for row in rows if row.get("question")}
-    except Exception as e:
-        print(f"CORRECTIONS READ ERROR: {e}")
-
-    # Fallback to local JSON
-    if os.path.exists(CORRECTIONS_FILE):
-        with open(CORRECTIONS_FILE, "r") as f:
-            return json.load(f)
-    return {}
-def save_corrections(corrections):
-    # ── 1. Save to local JSON ─────────────────────────────────────────────
-    try:
-        with open(CORRECTIONS_FILE, "w") as f:
-            json.dump(corrections, f, indent=2)
-    except Exception as e:
-        print(f"CORRECTIONS JSON ERROR: {e}")
-
-    # ── 2. Save to Google Sheets (separate tab) ───────────────────────────
-    try:
-        import gspread
-        creds = service_account.Credentials.from_service_account_file(
-            SERVICE_ACCOUNT_FILE,
-            scopes=[
-                "https://www.googleapis.com/auth/spreadsheets",
-                "https://www.googleapis.com/auth/drive"
-            ]
-        )
-        gc = gspread.authorize(creds)
-        sh = gc.open_by_key(SHEET_ID)
-
-        # Get or create a Corrections tab
         try:
             ws = sh.worksheet("Corrections")
         except Exception:
             ws = sh.add_worksheet(title="Corrections", rows=500, cols=3)
             ws.insert_row(["question", "answer", "last_updated"], 1)
+            return {}
+        rows = ws.get_all_records()
+        return {row["question"]: row["answer"] for row in rows if row.get("question")}
+    except Exception as e:
+        print(f"CORRECTIONS READ ERROR: {e}")
+    if os.path.exists(CORRECTIONS_FILE):
+        with open(CORRECTIONS_FILE, "r") as f:
+            return json.load(f)
+    return {}
 
-        # Clear and rewrite all corrections
+def save_corrections(corrections):
+    try:
+        with open(CORRECTIONS_FILE, "w") as f:
+            json.dump(corrections, f, indent=2)
+    except Exception as e:
+        print(f"CORRECTIONS JSON ERROR: {e}")
+    try:
+        import gspread
+        creds = service_account.Credentials.from_service_account_file(
+            SERVICE_ACCOUNT_FILE,
+            scopes=["https://www.googleapis.com/auth/spreadsheets",
+                    "https://www.googleapis.com/auth/drive"]
+        )
+        gc = gspread.authorize(creds)
+        sh = gc.open_by_key(SHEET_ID)
+        try:
+            ws = sh.worksheet("Corrections")
+        except Exception:
+            ws = sh.add_worksheet(title="Corrections", rows=500, cols=3)
+            ws.insert_row(["question", "answer", "last_updated"], 1)
         ws.clear()
         ws.insert_row(["question", "answer", "last_updated"], 1)
         for q, a in corrections.items():
             ws.append_row([q, a, datetime.now().strftime("%Y-%m-%d %H:%M:%S")])
-
     except Exception as e:
         print(f"CORRECTIONS SHEETS ERROR: {e}")
 
@@ -111,10 +102,7 @@ def check_corrections(question):
 def log_feedback(question, answer, rating, comment="", auto_score=None):
     import re
     score = auto_score or {}
-
-    # Strip HTML tags from answer
     clean_answer = re.sub(r'<[^>]+>', '', answer).strip()
-
     row = [
         datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         question, clean_answer, rating, comment,
@@ -123,8 +111,7 @@ def log_feedback(question, answer, rating, comment="", auto_score=None):
         score.get("completeness", ""),
         score.get("overall", ""),
     ]
-
-    # ── 1. Save to local CSV ──────────────────────────────────────────────
+    # 1. Local CSV
     try:
         exists = os.path.exists(FEEDBACK_FILE)
         with open(FEEDBACK_FILE, "a", newline="", encoding="utf-8") as f:
@@ -136,22 +123,19 @@ def log_feedback(question, answer, rating, comment="", auto_score=None):
             writer.writerow(row)
     except Exception as e:
         print(f"CSV ERROR: {e}")
-
-    # ── 2. Save to Google Sheets ──────────────────────────────────────────
+    # 2. Google Sheets
     try:
         import gspread
         creds = service_account.Credentials.from_service_account_file(
             SERVICE_ACCOUNT_FILE,
-            scopes=[
-                "https://www.googleapis.com/auth/spreadsheets",
-                "https://www.googleapis.com/auth/drive"
-            ]
+            scopes=["https://www.googleapis.com/auth/spreadsheets",
+                    "https://www.googleapis.com/auth/drive"]
         )
         gc = gspread.authorize(creds)
         sh = gc.open_by_key(SHEET_ID)
         ws = sh.sheet1
-        # Add headers if sheet is empty
-        if not ws.get_all_values():
+        first_row = ws.row_values(1)
+        if not first_row or first_row[0] != "timestamp":
             ws.insert_row(["timestamp", "question", "answer", "rating",
                            "comment", "relevance", "groundedness",
                            "completeness", "overall"], 1)
@@ -160,22 +144,19 @@ def log_feedback(question, answer, rating, comment="", auto_score=None):
         import traceback
         print(f"SHEETS ERROR: {e}")
         print(traceback.format_exc())
+
 def load_feedback():
-    # Try Google Sheets first
     try:
         import gspread
         creds = service_account.Credentials.from_service_account_file(
             SERVICE_ACCOUNT_FILE,
-            scopes=[
-                "https://www.googleapis.com/auth/spreadsheets",
-                "https://www.googleapis.com/auth/drive"
-            ]
+            scopes=["https://www.googleapis.com/auth/spreadsheets",
+                    "https://www.googleapis.com/auth/drive"]
         )
         gc = gspread.authorize(creds)
         sh = gc.open_by_key(SHEET_ID)
         ws = sh.sheet1
         rows = ws.get_all_records()
-        # Ensure all rows have score fields
         for row in rows:
             for col in ["relevance", "groundedness", "completeness", "overall"]:
                 if col not in row:
@@ -183,8 +164,6 @@ def load_feedback():
         return rows
     except Exception as e:
         print(f"SHEETS READ ERROR: {e}")
-
-    # Fallback to local CSV
     if not os.path.exists(FEEDBACK_FILE):
         return []
     with open(FEEDBACK_FILE, "r", encoding="utf-8") as f:
@@ -194,6 +173,32 @@ def load_feedback():
             if col not in row:
                 row[col] = ""
     return rows
+
+# ── Chat logging ──────────────────────────────────────────────────────────────
+def log_conversation(question, answer):
+    try:
+        import re
+        import gspread
+        creds = service_account.Credentials.from_service_account_file(
+            SERVICE_ACCOUNT_FILE,
+            scopes=["https://www.googleapis.com/auth/spreadsheets",
+                    "https://www.googleapis.com/auth/drive"]
+        )
+        gc = gspread.authorize(creds)
+        sh = gc.open_by_key(CHAT_LOG_SHEET_ID)
+        ws = sh.sheet1
+        first_row = ws.row_values(1)
+        if not first_row or first_row[0] != "timestamp":
+            ws.insert_row(["timestamp", "question", "answer"], 1)
+        clean_answer = re.sub(r'<[^>]+>', '', answer).strip()
+        ws.append_row([
+            datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            question,
+            clean_answer
+        ])
+    except Exception as e:
+        print(f"CHAT LOG ERROR: {e}")
+
 # ── Auto-scoring ──────────────────────────────────────────────────────────────
 def score_response(question, answer, sources):
     try:
@@ -599,21 +604,16 @@ if st.session_state.admin_mode:
     if feedback_data:
         st.markdown("### 📥 Download Feedback Log")
         import io as _io
-
         output = _io.StringIO()
         writer = csv.writer(output)
         writer.writerow(["timestamp", "question", "answer", "rating",
                          "comment", "relevance", "groundedness", "completeness", "overall"])
         for row in feedback_data:
             writer.writerow([
-                row.get("timestamp", ""),
-                row.get("question", ""),
-                row.get("answer", ""),
-                row.get("rating", ""),
-                row.get("comment", ""),
-                row.get("relevance", ""),
-                row.get("groundedness", ""),
-                row.get("completeness", ""),
+                row.get("timestamp", ""), row.get("question", ""),
+                row.get("answer", ""), row.get("rating", ""),
+                row.get("comment", ""), row.get("relevance", ""),
+                row.get("groundedness", ""), row.get("completeness", ""),
                 row.get("overall", ""),
             ])
         st.download_button("📥 Download CSV", output.getvalue(),
@@ -690,7 +690,6 @@ else:
         with st.chat_message(msg["role"]):
             st.markdown(msg["content"], unsafe_allow_html=True)
 
-    # Feedback buttons — render immediately after last assistant message
     if st.session_state.messages:
         last     = st.session_state.messages[-1]
         last_idx = len(st.session_state.messages) - 1
@@ -763,6 +762,7 @@ else:
                 st.markdown(ans, unsafe_allow_html=True)
                 st.session_state.messages.append(
                     {"role": "assistant", "content": ans, "is_safety": True})
+                log_conversation(prompt, "SAFETY ALERT — contact manager immediately")
                 st.rerun()
 
             # 2. Corrections
@@ -770,6 +770,7 @@ else:
                 ans = f'<div class="bx-correction-badge">✓ Verified answer</div>\n\n{correction}'
                 st.markdown(ans, unsafe_allow_html=True)
                 st.session_state.messages.append({"role": "assistant", "content": ans})
+                log_conversation(prompt, correction)
                 st.rerun()
 
             # 3. AI
@@ -832,4 +833,5 @@ else:
 
                 full = answer + (f"\n\n{sources_html}" if sources_html else "")
                 st.session_state.messages.append({"role": "assistant", "content": full})
+                log_conversation(prompt, answer)
                 st.rerun()
