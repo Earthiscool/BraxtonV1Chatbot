@@ -34,8 +34,8 @@ else:
 FOLDER_ID        = os.environ.get("DRIVE_FOLDER_ID", "")
 ADMIN_PASSWORD   = os.environ.get("ADMIN_PASSWORD", "")
 SCOPES           = ["https://www.googleapis.com/auth/drive.readonly"]
-SHEET_ID         = os.environ.get("SHEET_ID", "1IBJzo1GOv8KgwmtKJRBmbgphOoI8HhSVaJXlIXPRv4E")
-CHAT_LOG_SHEET_ID = os.environ.get("CHAT_LOG_SHEET_ID", "1JbCE-HnvRBtSGTtksqzQlNCjmMnb1cErwdc7dWQFBcg")
+SHEET_ID         = os.environ.get("SHEET_ID", "")
+CHAT_LOG_SHEET_ID = os.environ.get("CHAT_LOG_SHEET_ID", "")
 
 # ── Corrections ───────────────────────────────────────────────────────────────
 def load_corrections():
