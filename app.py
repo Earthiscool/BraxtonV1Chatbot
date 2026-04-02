@@ -1,5 +1,15 @@
 import os
+import sys
+
+# 1. FIX: Protobuf Descriptor Error (Must be at the very top)
 os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+
+# 2. FIX: ChromaDB SQLite Error (Required for Streamlit Cloud)
+try:
+    __import__('pysqlite3')
+    sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+except ImportError:
+    pass
 import csv
 import json
 import time
