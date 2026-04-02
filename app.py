@@ -1,5 +1,16 @@
 import os
+import sys
+
+# 1. Force Pure Python implementation
 os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+
+# 2. Disable the specific C++ fast-parsing that crashes on 3.14
+os.environ["OTEL_PYTHON_DISABLED_INSTRUMENTATIONS"] = "grpc"
+
+# 3. Ensure no other part of the system has pre-loaded protobuf
+if "google.protobuf" in sys.modules:
+    import importlib
+    importlib.reload(sys.modules["google.protobuf"])
 import csv
 import json
 import time

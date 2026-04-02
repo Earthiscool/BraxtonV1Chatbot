@@ -10,3 +10,5 @@ google-api-python-client
 sentence-transformers
 groq
 gspread
+# Remove 'protobuf' entirely from here; let the other libraries
+# install the version they were tested with.
