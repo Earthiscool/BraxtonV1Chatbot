@@ -1,18 +1,7 @@
 import os
-import sys
-
-# 1. Force Pure Python BEFORE anything else happens
+import os
+# Force the pure-python implementation
 os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
-# 2. Disable the specific telemetry module that is crashing
-os.environ["CHROMA_OTEL_COLLECTOR_ENDPOINT"] = ""
-os.environ["OTEL_SDK_DISABLED"] = "true"
-
-# 3. Force a reload of the protobuf library if it was pre-loaded by Streamlit
-if "google.protobuf" in sys.modules:
-    import importlib
-    for module_name in list(sys.modules.keys()):
-        if "google.protobuf" in module_name:
-            importlib.reload(sys.modules[module_name])
 import csv
 import json
 import time
