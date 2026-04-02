@@ -1,7 +1,5 @@
 import os
-import os
-# Force the pure-python implementation
-os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+
 import csv
 import json
 import time
