@@ -10,6 +10,3 @@ google-api-python-client
 sentence-transformers
 groq
 gspread
-# Remove the version constraint on protobuf here to let
-# chromadb pull exactly what it needs for 3.14
-protobuf
