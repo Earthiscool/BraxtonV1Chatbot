@@ -14,7 +14,6 @@ from llama_index.vector_stores.chroma import ChromaVectorStore
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.llms.groq import Groq
 
-# ── Config ────────────────────────────────────────────────────────────────────
 GROQ_API_KEY         = os.environ.get("GROQ_API_KEY", "")
 CHROMA_DIR           = "./chroma_db"
 DOCS_DIR             = "./downloaded_docs"
@@ -37,7 +36,6 @@ SCOPES           = ["https://www.googleapis.com/auth/drive.readonly"]
 SHEET_ID         = os.environ.get("SHEET_ID", "")
 CHAT_LOG_SHEET_ID = os.environ.get("CHAT_LOG_SHEET_ID", "")
 
-# ── Corrections ───────────────────────────────────────────────────────────────
 def load_corrections():
     try:
         import gspread
@@ -98,7 +96,6 @@ def check_corrections(question):
             return value
     return None
 
-# ── Feedback ──────────────────────────────────────────────────────────────────
 def log_feedback(question, answer, rating, comment="", auto_score=None):
     import re
     score = auto_score or {}
@@ -111,7 +108,6 @@ def log_feedback(question, answer, rating, comment="", auto_score=None):
         score.get("completeness", ""),
         score.get("overall", ""),
     ]
-    # 1. Local CSV
     try:
         exists = os.path.exists(FEEDBACK_FILE)
         with open(FEEDBACK_FILE, "a", newline="", encoding="utf-8") as f:
@@ -123,7 +119,6 @@ def log_feedback(question, answer, rating, comment="", auto_score=None):
             writer.writerow(row)
     except Exception as e:
         print(f"CSV ERROR: {e}")
-    # 2. Google Sheets
     try:
         import gspread
         creds = service_account.Credentials.from_service_account_file(
@@ -174,7 +169,6 @@ def load_feedback():
                 row[col] = ""
     return rows
 
-# ── Chat logging ──────────────────────────────────────────────────────────────
 def log_conversation(question, answer):
     try:
         import re
@@ -199,7 +193,6 @@ def log_conversation(question, answer):
     except Exception as e:
         print(f"CHAT LOG ERROR: {e}")
 
-# ── Auto-scoring ──────────────────────────────────────────────────────────────
 def score_response(question, answer, sources):
     try:
         from groq import Groq as GroqClient
@@ -232,14 +225,12 @@ Reply format exactly: {{"relevance": X, "groundedness": X, "completeness": X, "o
         pass
     return None
 
-# ── Safety ────────────────────────────────────────────────────────────────────
 SAFETY_KEYWORDS = ["emergency", "injury", "hurt", "accident", "fire", "theft",
                    "robbery", "assault", "police", "ambulance", "bleeding"]
 
 def check_safety(prompt):
     return any(w in prompt.lower() for w in SAFETY_KEYWORDS)
 
-# ── Prompt ────────────────────────────────────────────────────────────────────
 QA_PROMPT = PromptTemplate(
     """You are Braxton Assistant for Braxton retail employees.
 Answer using ONLY the documents below. Be concise. Use numbered steps for procedures.
@@ -263,7 +254,6 @@ def load_index():
     storage_context   = StorageContext.from_defaults(vector_store=vector_store)
     return VectorStoreIndex.from_vector_store(vector_store, storage_context=storage_context)
 
-# ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Braxton Assistant",
     page_icon="🦅",
@@ -465,7 +455,6 @@ html, body,
 </style>
 """, unsafe_allow_html=True)
 
-# ── Session state ─────────────────────────────────────────────────────────────
 for key, default in {
     "messages":         [],
     "feedback_given":   {},
@@ -477,7 +466,6 @@ for key, default in {
     if key not in st.session_state:
         st.session_state[key] = default
 
-# ── Score pill helper ─────────────────────────────────────────────────────────
 def score_pill(label, value):
     if not value:
         return ""
@@ -485,9 +473,6 @@ def score_pill(label, value):
     cls = "score-good" if v >= 4 else ("score-mid" if v >= 3 else "score-bad")
     return f'<span class="score-pill {cls}">{label}: {v}/5</span>'
 
-# ══════════════════════════════════════════════════════════════════════════════
-# ADMIN PANEL
-# ══════════════════════════════════════════════════════════════════════════════
 if st.session_state.admin_mode:
     col_title, col_back = st.columns([4, 1])
     with col_title:
@@ -619,9 +604,6 @@ if st.session_state.admin_mode:
         st.download_button("📥 Download CSV", output.getvalue(),
                            file_name="braxton_feedback.csv", mime="text/csv")
 
-# ══════════════════════════════════════════════════════════════════════════════
-# MAIN CHAT UI
-# ══════════════════════════════════════════════════════════════════════════════
 else:
     h1, h2 = st.columns([5, 1])
     with h1:
@@ -772,8 +754,6 @@ else:
                 st.session_state.messages.append({"role": "assistant", "content": ans})
                 log_conversation(prompt, correction)
                 st.rerun()
-
-            # 3. AI
             else:
                 with st.spinner("Searching…"):
                     start_time = time.time()
